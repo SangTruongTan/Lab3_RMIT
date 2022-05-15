@@ -1,0 +1,447 @@
+|StopWatch
+start_stop => start_stop.IN1
+lap_reset => lap_reset.IN1
+rstn => rstn.IN1
+clk => clk.IN1
+HEX0[0] <= Display_Four:displayfour2.HEX0
+HEX0[1] <= Display_Four:displayfour2.HEX0
+HEX0[2] <= Display_Four:displayfour2.HEX0
+HEX0[3] <= Display_Four:displayfour2.HEX0
+HEX0[4] <= Display_Four:displayfour2.HEX0
+HEX0[5] <= Display_Four:displayfour2.HEX0
+HEX0[6] <= Display_Four:displayfour2.HEX0
+HEX1[0] <= Display_Four:displayfour2.HEX1
+HEX1[1] <= Display_Four:displayfour2.HEX1
+HEX1[2] <= Display_Four:displayfour2.HEX1
+HEX1[3] <= Display_Four:displayfour2.HEX1
+HEX1[4] <= Display_Four:displayfour2.HEX1
+HEX1[5] <= Display_Four:displayfour2.HEX1
+HEX1[6] <= Display_Four:displayfour2.HEX1
+HEX2[0] <= Display_Four:displayfour2.HEX2
+HEX2[1] <= Display_Four:displayfour2.HEX2
+HEX2[2] <= Display_Four:displayfour2.HEX2
+HEX2[3] <= Display_Four:displayfour2.HEX2
+HEX2[4] <= Display_Four:displayfour2.HEX2
+HEX2[5] <= Display_Four:displayfour2.HEX2
+HEX2[6] <= Display_Four:displayfour2.HEX2
+HEX3[0] <= Display_Four:displayfour2.HEX3
+HEX3[1] <= Display_Four:displayfour2.HEX3
+HEX3[2] <= Display_Four:displayfour2.HEX3
+HEX3[3] <= Display_Four:displayfour2.HEX3
+HEX3[4] <= Display_Four:displayfour2.HEX3
+HEX3[5] <= Display_Four:displayfour2.HEX3
+HEX3[6] <= Display_Four:displayfour2.HEX3
+HEX4[0] <= Display_Four:displayfour1.HEX0
+HEX4[1] <= Display_Four:displayfour1.HEX0
+HEX4[2] <= Display_Four:displayfour1.HEX0
+HEX4[3] <= Display_Four:displayfour1.HEX0
+HEX4[4] <= Display_Four:displayfour1.HEX0
+HEX4[5] <= Display_Four:displayfour1.HEX0
+HEX4[6] <= Display_Four:displayfour1.HEX0
+HEX5[0] <= Display_Four:displayfour1.HEX1
+HEX5[1] <= Display_Four:displayfour1.HEX1
+HEX5[2] <= Display_Four:displayfour1.HEX1
+HEX5[3] <= Display_Four:displayfour1.HEX1
+HEX5[4] <= Display_Four:displayfour1.HEX1
+HEX5[5] <= Display_Four:displayfour1.HEX1
+HEX5[6] <= Display_Four:displayfour1.HEX1
+HEX6[0] <= Display_Four:displayfour1.HEX2
+HEX6[1] <= Display_Four:displayfour1.HEX2
+HEX6[2] <= Display_Four:displayfour1.HEX2
+HEX6[3] <= Display_Four:displayfour1.HEX2
+HEX6[4] <= Display_Four:displayfour1.HEX2
+HEX6[5] <= Display_Four:displayfour1.HEX2
+HEX6[6] <= Display_Four:displayfour1.HEX2
+HEX7[0] <= Display_Four:displayfour1.HEX3
+HEX7[1] <= Display_Four:displayfour1.HEX3
+HEX7[2] <= Display_Four:displayfour1.HEX3
+HEX7[3] <= Display_Four:displayfour1.HEX3
+HEX7[4] <= Display_Four:displayfour1.HEX3
+HEX7[5] <= Display_Four:displayfour1.HEX3
+HEX7[6] <= Display_Four:displayfour1.HEX3
+
+
+|StopWatch|FSM:fsm1
+start_stop => Mux0.IN2
+start_stop => state[1].IN0
+start_stop => Mux2.IN0
+lap_reset => Mux0.IN3
+lap_reset => state[1].IN1
+updated_lap => Mux2.IN3
+state[0] <= state[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+state[1] <= state[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+rstn => state[1]$latch.ACLR
+rstn => state[0]$latch.ACLR
+
+
+|StopWatch|Clock_divider:clk1
+clock_in => clock_out~reg0.CLK
+clock_in => counter[0].CLK
+clock_in => counter[1].CLK
+clock_in => counter[2].CLK
+clock_in => counter[3].CLK
+clock_in => counter[4].CLK
+clock_in => counter[5].CLK
+clock_in => counter[6].CLK
+clock_in => counter[7].CLK
+clock_in => counter[8].CLK
+clock_in => counter[9].CLK
+clock_in => counter[10].CLK
+clock_in => counter[11].CLK
+clock_in => counter[12].CLK
+clock_in => counter[13].CLK
+clock_in => counter[14].CLK
+clock_in => counter[15].CLK
+clock_in => counter[16].CLK
+clock_in => counter[17].CLK
+clock_in => counter[18].CLK
+clock_in => counter[19].CLK
+clock_in => counter[20].CLK
+clock_in => counter[21].CLK
+clock_in => counter[22].CLK
+clock_in => counter[23].CLK
+clock_in => counter[24].CLK
+clock_in => counter[25].CLK
+clock_in => counter[26].CLK
+clock_in => counter[27].CLK
+clock_out <= clock_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StopWatch|Display_Four:displayfour1
+Time[0] => Div0.IN19
+Time[1] => Div0.IN18
+Time[2] => Div0.IN17
+Time[3] => Div0.IN16
+Time[4] => Div0.IN15
+Time[5] => Div0.IN14
+Time[6] => Div0.IN13
+Time[7] => Div0.IN12
+Time[8] => Div0.IN11
+Time[9] => Div0.IN10
+Time[10] => Div0.IN9
+Time[11] => Div0.IN8
+Time[12] => Div0.IN7
+Time[13] => Div0.IN6
+Time[14] => Div0.IN5
+Time[15] => Div0.IN4
+HEX0[0] <= Display_Two:dis2.HEX0
+HEX0[1] <= Display_Two:dis2.HEX0
+HEX0[2] <= Display_Two:dis2.HEX0
+HEX0[3] <= Display_Two:dis2.HEX0
+HEX0[4] <= Display_Two:dis2.HEX0
+HEX0[5] <= Display_Two:dis2.HEX0
+HEX0[6] <= Display_Two:dis2.HEX0
+HEX1[0] <= Display_Two:dis2.HEX1
+HEX1[1] <= Display_Two:dis2.HEX1
+HEX1[2] <= Display_Two:dis2.HEX1
+HEX1[3] <= Display_Two:dis2.HEX1
+HEX1[4] <= Display_Two:dis2.HEX1
+HEX1[5] <= Display_Two:dis2.HEX1
+HEX1[6] <= Display_Two:dis2.HEX1
+HEX2[0] <= Display_Two:dis1.HEX0
+HEX2[1] <= Display_Two:dis1.HEX0
+HEX2[2] <= Display_Two:dis1.HEX0
+HEX2[3] <= Display_Two:dis1.HEX0
+HEX2[4] <= Display_Two:dis1.HEX0
+HEX2[5] <= Display_Two:dis1.HEX0
+HEX2[6] <= Display_Two:dis1.HEX0
+HEX3[0] <= Display_Two:dis1.HEX1
+HEX3[1] <= Display_Two:dis1.HEX1
+HEX3[2] <= Display_Two:dis1.HEX1
+HEX3[3] <= Display_Two:dis1.HEX1
+HEX3[4] <= Display_Two:dis1.HEX1
+HEX3[5] <= Display_Two:dis1.HEX1
+HEX3[6] <= Display_Two:dis1.HEX1
+
+
+|StopWatch|Display_Four:displayfour1|Display_Two:dis1
+Time[0] => Div0.IN11
+Time[0] => Mod1.IN11
+Time[1] => Div0.IN10
+Time[1] => Mod1.IN10
+Time[2] => Div0.IN9
+Time[2] => Mod1.IN9
+Time[3] => Div0.IN8
+Time[3] => Mod1.IN8
+Time[4] => Div0.IN7
+Time[4] => Mod1.IN7
+Time[5] => Div0.IN6
+Time[5] => Mod1.IN6
+Time[6] => Div0.IN5
+Time[6] => Mod1.IN5
+Time[7] => Div0.IN4
+Time[7] => Mod1.IN4
+HEX0[0] <= Display_Seven:display2.Out
+HEX0[1] <= Display_Seven:display2.Out
+HEX0[2] <= Display_Seven:display2.Out
+HEX0[3] <= Display_Seven:display2.Out
+HEX0[4] <= Display_Seven:display2.Out
+HEX0[5] <= Display_Seven:display2.Out
+HEX0[6] <= Display_Seven:display2.Out
+HEX1[0] <= Display_Seven:display1.Out
+HEX1[1] <= Display_Seven:display1.Out
+HEX1[2] <= Display_Seven:display1.Out
+HEX1[3] <= Display_Seven:display1.Out
+HEX1[4] <= Display_Seven:display1.Out
+HEX1[5] <= Display_Seven:display1.Out
+HEX1[6] <= Display_Seven:display1.Out
+
+
+|StopWatch|Display_Four:displayfour1|Display_Two:dis1|Display_Seven:display1
+In[0] => Decoder0.IN3
+In[1] => Decoder0.IN2
+In[2] => Decoder0.IN1
+In[3] => Decoder0.IN0
+Out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StopWatch|Display_Four:displayfour1|Display_Two:dis1|Display_Seven:display2
+In[0] => Decoder0.IN3
+In[1] => Decoder0.IN2
+In[2] => Decoder0.IN1
+In[3] => Decoder0.IN0
+Out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StopWatch|Display_Four:displayfour1|Display_Two:dis2
+Time[0] => Div0.IN11
+Time[0] => Mod1.IN11
+Time[1] => Div0.IN10
+Time[1] => Mod1.IN10
+Time[2] => Div0.IN9
+Time[2] => Mod1.IN9
+Time[3] => Div0.IN8
+Time[3] => Mod1.IN8
+Time[4] => Div0.IN7
+Time[4] => Mod1.IN7
+Time[5] => Div0.IN6
+Time[5] => Mod1.IN6
+Time[6] => Div0.IN5
+Time[6] => Mod1.IN5
+Time[7] => Div0.IN4
+Time[7] => Mod1.IN4
+HEX0[0] <= Display_Seven:display2.Out
+HEX0[1] <= Display_Seven:display2.Out
+HEX0[2] <= Display_Seven:display2.Out
+HEX0[3] <= Display_Seven:display2.Out
+HEX0[4] <= Display_Seven:display2.Out
+HEX0[5] <= Display_Seven:display2.Out
+HEX0[6] <= Display_Seven:display2.Out
+HEX1[0] <= Display_Seven:display1.Out
+HEX1[1] <= Display_Seven:display1.Out
+HEX1[2] <= Display_Seven:display1.Out
+HEX1[3] <= Display_Seven:display1.Out
+HEX1[4] <= Display_Seven:display1.Out
+HEX1[5] <= Display_Seven:display1.Out
+HEX1[6] <= Display_Seven:display1.Out
+
+
+|StopWatch|Display_Four:displayfour1|Display_Two:dis2|Display_Seven:display1
+In[0] => Decoder0.IN3
+In[1] => Decoder0.IN2
+In[2] => Decoder0.IN1
+In[3] => Decoder0.IN0
+Out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StopWatch|Display_Four:displayfour1|Display_Two:dis2|Display_Seven:display2
+In[0] => Decoder0.IN3
+In[1] => Decoder0.IN2
+In[2] => Decoder0.IN1
+In[3] => Decoder0.IN0
+Out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StopWatch|Display_Four:displayfour2
+Time[0] => Div0.IN19
+Time[1] => Div0.IN18
+Time[2] => Div0.IN17
+Time[3] => Div0.IN16
+Time[4] => Div0.IN15
+Time[5] => Div0.IN14
+Time[6] => Div0.IN13
+Time[7] => Div0.IN12
+Time[8] => Div0.IN11
+Time[9] => Div0.IN10
+Time[10] => Div0.IN9
+Time[11] => Div0.IN8
+Time[12] => Div0.IN7
+Time[13] => Div0.IN6
+Time[14] => Div0.IN5
+Time[15] => Div0.IN4
+HEX0[0] <= Display_Two:dis2.HEX0
+HEX0[1] <= Display_Two:dis2.HEX0
+HEX0[2] <= Display_Two:dis2.HEX0
+HEX0[3] <= Display_Two:dis2.HEX0
+HEX0[4] <= Display_Two:dis2.HEX0
+HEX0[5] <= Display_Two:dis2.HEX0
+HEX0[6] <= Display_Two:dis2.HEX0
+HEX1[0] <= Display_Two:dis2.HEX1
+HEX1[1] <= Display_Two:dis2.HEX1
+HEX1[2] <= Display_Two:dis2.HEX1
+HEX1[3] <= Display_Two:dis2.HEX1
+HEX1[4] <= Display_Two:dis2.HEX1
+HEX1[5] <= Display_Two:dis2.HEX1
+HEX1[6] <= Display_Two:dis2.HEX1
+HEX2[0] <= Display_Two:dis1.HEX0
+HEX2[1] <= Display_Two:dis1.HEX0
+HEX2[2] <= Display_Two:dis1.HEX0
+HEX2[3] <= Display_Two:dis1.HEX0
+HEX2[4] <= Display_Two:dis1.HEX0
+HEX2[5] <= Display_Two:dis1.HEX0
+HEX2[6] <= Display_Two:dis1.HEX0
+HEX3[0] <= Display_Two:dis1.HEX1
+HEX3[1] <= Display_Two:dis1.HEX1
+HEX3[2] <= Display_Two:dis1.HEX1
+HEX3[3] <= Display_Two:dis1.HEX1
+HEX3[4] <= Display_Two:dis1.HEX1
+HEX3[5] <= Display_Two:dis1.HEX1
+HEX3[6] <= Display_Two:dis1.HEX1
+
+
+|StopWatch|Display_Four:displayfour2|Display_Two:dis1
+Time[0] => Div0.IN11
+Time[0] => Mod1.IN11
+Time[1] => Div0.IN10
+Time[1] => Mod1.IN10
+Time[2] => Div0.IN9
+Time[2] => Mod1.IN9
+Time[3] => Div0.IN8
+Time[3] => Mod1.IN8
+Time[4] => Div0.IN7
+Time[4] => Mod1.IN7
+Time[5] => Div0.IN6
+Time[5] => Mod1.IN6
+Time[6] => Div0.IN5
+Time[6] => Mod1.IN5
+Time[7] => Div0.IN4
+Time[7] => Mod1.IN4
+HEX0[0] <= Display_Seven:display2.Out
+HEX0[1] <= Display_Seven:display2.Out
+HEX0[2] <= Display_Seven:display2.Out
+HEX0[3] <= Display_Seven:display2.Out
+HEX0[4] <= Display_Seven:display2.Out
+HEX0[5] <= Display_Seven:display2.Out
+HEX0[6] <= Display_Seven:display2.Out
+HEX1[0] <= Display_Seven:display1.Out
+HEX1[1] <= Display_Seven:display1.Out
+HEX1[2] <= Display_Seven:display1.Out
+HEX1[3] <= Display_Seven:display1.Out
+HEX1[4] <= Display_Seven:display1.Out
+HEX1[5] <= Display_Seven:display1.Out
+HEX1[6] <= Display_Seven:display1.Out
+
+
+|StopWatch|Display_Four:displayfour2|Display_Two:dis1|Display_Seven:display1
+In[0] => Decoder0.IN3
+In[1] => Decoder0.IN2
+In[2] => Decoder0.IN1
+In[3] => Decoder0.IN0
+Out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StopWatch|Display_Four:displayfour2|Display_Two:dis1|Display_Seven:display2
+In[0] => Decoder0.IN3
+In[1] => Decoder0.IN2
+In[2] => Decoder0.IN1
+In[3] => Decoder0.IN0
+Out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StopWatch|Display_Four:displayfour2|Display_Two:dis2
+Time[0] => Div0.IN11
+Time[0] => Mod1.IN11
+Time[1] => Div0.IN10
+Time[1] => Mod1.IN10
+Time[2] => Div0.IN9
+Time[2] => Mod1.IN9
+Time[3] => Div0.IN8
+Time[3] => Mod1.IN8
+Time[4] => Div0.IN7
+Time[4] => Mod1.IN7
+Time[5] => Div0.IN6
+Time[5] => Mod1.IN6
+Time[6] => Div0.IN5
+Time[6] => Mod1.IN5
+Time[7] => Div0.IN4
+Time[7] => Mod1.IN4
+HEX0[0] <= Display_Seven:display2.Out
+HEX0[1] <= Display_Seven:display2.Out
+HEX0[2] <= Display_Seven:display2.Out
+HEX0[3] <= Display_Seven:display2.Out
+HEX0[4] <= Display_Seven:display2.Out
+HEX0[5] <= Display_Seven:display2.Out
+HEX0[6] <= Display_Seven:display2.Out
+HEX1[0] <= Display_Seven:display1.Out
+HEX1[1] <= Display_Seven:display1.Out
+HEX1[2] <= Display_Seven:display1.Out
+HEX1[3] <= Display_Seven:display1.Out
+HEX1[4] <= Display_Seven:display1.Out
+HEX1[5] <= Display_Seven:display1.Out
+HEX1[6] <= Display_Seven:display1.Out
+
+
+|StopWatch|Display_Four:displayfour2|Display_Two:dis2|Display_Seven:display1
+In[0] => Decoder0.IN3
+In[1] => Decoder0.IN2
+In[2] => Decoder0.IN1
+In[3] => Decoder0.IN0
+Out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StopWatch|Display_Four:displayfour2|Display_Two:dis2|Display_Seven:display2
+In[0] => Decoder0.IN3
+In[1] => Decoder0.IN2
+In[2] => Decoder0.IN1
+In[3] => Decoder0.IN0
+Out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

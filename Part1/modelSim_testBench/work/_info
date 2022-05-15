@@ -1,0 +1,297 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+vClock_divider
+Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z1 !s110 1652631064
+!i10b 1
+!s100 7H5XVUnOW=k0D]ONBMc;h0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IB@L=0KTba4EH]V;`C382O1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+Z4 dC:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench
+Z5 w1652630814
+Z6 8C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/src/StopWatch.sv
+Z7 FC:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/src/StopWatch.sv
+!i122 156
+L0 176 16
+Z8 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z9 !s108 1652631063.000000
+Z10 !s107 C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/src/StopWatch.sv|
+Z11 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/src/StopWatch.sv|
+!i113 1
+Z12 o-work work -sv
+Z13 tCvgOpt 0
+n@clock_divider
+vClock_divider1
+R0
+Z14 !s110 1652631364
+!i10b 1
+!s100 >YYz0dkW^3=8B^?iI5@QE1
+R2
+Ih266><IdKaU@XL11:O?4d1
+R3
+S1
+R4
+Z15 w1652631362
+Z16 8C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv
+Z17 FC:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv
+!i122 161
+L0 151 15
+R8
+r1
+!s85 0
+31
+Z18 !s108 1652631364.000000
+!s107 C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv|
+Z19 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv|
+!i113 1
+R12
+R13
+n@clock_divider1
+vConvert
+R0
+R14
+!i10b 1
+!s100 G9SY7oH@`]H=A<oXbGHPI2
+R2
+I5hBX9<<M<P_]b6aK3`74=0
+R3
+S1
+R4
+R15
+R16
+R17
+!i122 161
+L0 115 34
+R8
+r1
+!s85 0
+31
+R18
+Z20 !s107 C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv|
+R19
+!i113 1
+R12
+R13
+n@convert
+vDisplay_Four
+R0
+R1
+!i10b 1
+!s100 @Emm:boYg>V:1^>deSEKS0
+R2
+Ijg=M0fggYmaMl;8BcTQAT0
+R3
+S1
+R4
+R5
+R6
+R7
+!i122 156
+L0 103 42
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+n@display_@four
+vDisplay_Seven
+R0
+R1
+!i10b 1
+!s100 :TEflfdZZPSCT69`XfZ<72
+R2
+I<GO;j@1O=3;]@:m?J[OhK1
+R3
+S1
+R4
+w1652612749
+8C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/Display_Seven.sv
+FC:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/Display_Seven.sv
+!i122 159
+L0 1 35
+R8
+r1
+!s85 0
+31
+Z21 !s108 1652631064.000000
+!s107 C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/Display_Seven.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/Display_Seven.sv|
+!i113 1
+R12
+R13
+n@display_@seven
+vDisplay_Seven_tb
+R0
+R1
+!i10b 1
+!s100 `a=f8ccSUYY7N;<UPRD6c0
+R2
+I^=e5jofWzi:eeRoT<5?M`2
+R3
+S1
+R4
+w1652612783
+8C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/Display_Seven_tb.sv
+FC:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/Display_Seven_tb.sv
+!i122 157
+L0 1 46
+R8
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/Display_Seven_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/Display_Seven_tb.sv|
+!i113 1
+R12
+R13
+n@display_@seven_tb
+vDisplay_Two
+R0
+R1
+!i10b 1
+!s100 >XCSa<PIVCE^4;`QWP71z0
+R2
+IDh[Pod[TVYzMS=OGM3EEc2
+R3
+S1
+R4
+R5
+R6
+R7
+!i122 156
+L0 147 27
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+n@display_@two
+vFSM
+R0
+Z22 !s110 1652631063
+!i10b 1
+!s100 `d3P<FR=KBa<c^9[6SJ;D2
+R2
+I9PYa2aD1=cIK5ek7if6?I3
+R3
+S1
+R4
+w1652628433
+8C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/src/FSM.sv
+FC:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/src/FSM.sv
+!i122 154
+L0 1 58
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/src/FSM.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/src/FSM.sv|
+!i113 1
+R12
+R13
+n@f@s@m
+vFSM_tb
+R0
+R22
+!i10b 1
+!s100 _T7Gd@OfTHgkiQ;UWfUFn3
+R2
+IO491BBKHC3DZ6a85UDO:Y0
+R3
+S1
+R4
+w1652594144
+8C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/FSM_tb.sv
+FC:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/FSM_tb.sv
+!i122 155
+L0 1 52
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/FSM_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/FSM_tb.sv|
+!i113 1
+R12
+R13
+n@f@s@m_tb
+vStopWatch
+R0
+R1
+!i10b 1
+!s100 8;4j`QFUgTVVNbmlm0jmk3
+R2
+I1?FIBA=FU=13K;g]bA9hI0
+R3
+S1
+R4
+R5
+R6
+R7
+!i122 156
+L0 1 99
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+n@stop@watch
+vStopWatch_tb
+R0
+R14
+!i10b 1
+!s100 Q83jJaLmM=NQ1[17;f7GM2
+R2
+I]SQHi@DIS7GHO3n7:jZ_C0
+R3
+S1
+R4
+R15
+R16
+R17
+!i122 161
+L0 1 113
+R8
+r1
+!s85 0
+31
+R18
+R20
+R19
+!i113 1
+R12
+R13
+n@stop@watch_tb

@@ -1,0 +1,21 @@
+//Stop Watch auto test bench
+//start_stop | lap_reset | rstn | EHEX0_Decimal | -> | EHEX7_Decimal
+7_0000_0000             //Initial State
+3_0000_0000             //Run State
+7_0001_0000             //Run State
+7_0002_0000             //Run State
+5_0003_0003             //Lap time
+7_0004_0003             //Return to Run State
+7_0005_0003             //Run as normal
+3_0006_0003             //Stop State
+7_0006_0003             //Keep Stop
+3_0006_0003             //Return to Run State
+7_0007_0003             //Keep Run
+3_0008_0003             //Stop State
+5_0000_0000             //Reset State
+7_0000_0000             //Keep Reset
+3_0000_0000             //Run State
+7_0001_0000             //Run
+5_0002_0002             //Lap time
+6_0000_0000             //Reset
+0_0000_0000             //Stop simulation
