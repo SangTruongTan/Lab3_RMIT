@@ -5,7 +5,7 @@ logic [3:0] In;
 wire [6:0] Out;       //Reference to DE2 Kit
 
 
-module4 mod4(.In(In),
+Display_Seven Dis1(.In(In),
              .Out(Out));
 
 initial begin
