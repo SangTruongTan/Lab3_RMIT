@@ -1,0 +1,4 @@
+Info (10281): Verilog HDL Declaration information at TimeKeeper.sv(28): object "LED3" differs only in case from object "led3" in the same scope File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/TimeKeeper.sv Line: 28
+Info (10281): Verilog HDL Declaration information at TimeKeeper.sv(29): object "LED2" differs only in case from object "led2" in the same scope File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/TimeKeeper.sv Line: 29
+Info (10281): Verilog HDL Declaration information at TimeKeeper.sv(30): object "LED1" differs only in case from object "led1" in the same scope File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/TimeKeeper.sv Line: 30
+Info (10281): Verilog HDL Declaration information at TimeKeeper.sv(31): object "LED0" differs only in case from object "led0" in the same scope File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/TimeKeeper.sv Line: 31

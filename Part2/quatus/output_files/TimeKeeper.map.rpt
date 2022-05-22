@@ -1,0 +1,597 @@
+Analysis & Synthesis report for TimeKeeper
+Sun May 22 16:26:49 2022
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. User-Specified and Inferred Latches
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: Top-level Entity: |TimeKeeper
+ 12. Parameter Settings for User Entity Instance: Clock_divider:clkdiv1
+ 13. Parameter Settings for User Entity Instance: Driver:dri1
+ 14. Port Connectivity Checks: "Driver:dri1|SPI:spi1"
+ 15. Post-Synthesis Netlist Statistics for Top Partition
+ 16. Elapsed Time Per Partition
+ 17. Analysis & Synthesis Messages
+ 18. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Sun May 22 16:26:49 2022       ;
+; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Revision Name                   ; TimeKeeper                                  ;
+; Top-level Entity Name           ; TimeKeeper                                  ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 50                                          ;
+; Total pins                      ; 35                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CSXFC6D6F31C6     ;                    ;
+; Top-level entity name                                                           ; TimeKeeper         ; TimeKeeper         ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                 ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                             ; Library ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------+---------+
+; ../src/DeMux.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/DeMux.sv         ;         ;
+; ../src/TimeKeeper.sv             ; yes             ; User SystemVerilog HDL File  ; C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/TimeKeeper.sv    ;         ;
+; ../src/SPI.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/SPI.sv           ;         ;
+; ../src/Driver.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv        ;         ;
+; ../src/Display_Seven.sv          ; yes             ; User SystemVerilog HDL File  ; C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Display_Seven.sv ;         ;
+; ../src/Decoder.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Decoder.sv       ;         ;
+; ../src/Clock_Divider.sv          ; yes             ; User SystemVerilog HDL File  ; C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Clock_Divider.sv ;         ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------+---------+
+
+
++----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary              ;
++---------------------------------------------+------------+
+; Resource                                    ; Usage      ;
++---------------------------------------------+------------+
+; Estimate of Logic utilization (ALMs needed) ; 125        ;
+;                                             ;            ;
+; Combinational ALUT usage for logic          ; 220        ;
+;     -- 7 input functions                    ; 1          ;
+;     -- 6 input functions                    ; 28         ;
+;     -- 5 input functions                    ; 16         ;
+;     -- 4 input functions                    ; 92         ;
+;     -- <=3 input functions                  ; 83         ;
+;                                             ;            ;
+; Dedicated logic registers                   ; 50         ;
+;                                             ;            ;
+; I/O pins                                    ; 35         ;
+;                                             ;            ;
+; Total DSP Blocks                            ; 0          ;
+;                                             ;            ;
+; Maximum fan-out node                        ; rstn~input ;
+; Maximum fan-out                             ; 55         ;
+; Total fan-out                               ; 1037       ;
+; Average fan-out                             ; 3.04       ;
++---------------------------------------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                       ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------+---------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                  ; Entity Name   ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------+---------------+--------------+
+; |TimeKeeper                ; 220 (0)             ; 50 (0)                    ; 0                 ; 0          ; 35   ; 0            ; |TimeKeeper                          ; TimeKeeper    ; work         ;
+;    |Clock_divider:clkdiv1| ; 36 (36)             ; 29 (29)                   ; 0                 ; 0          ; 0    ; 0            ; |TimeKeeper|Clock_divider:clkdiv1    ; Clock_divider ; work         ;
+;    |Display_Seven:led0|    ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TimeKeeper|Display_Seven:led0       ; Display_Seven ; work         ;
+;    |Display_Seven:led1|    ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TimeKeeper|Display_Seven:led1       ; Display_Seven ; work         ;
+;    |Display_Seven:led2|    ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TimeKeeper|Display_Seven:led2       ; Display_Seven ; work         ;
+;    |Display_Seven:led3|    ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TimeKeeper|Display_Seven:led3       ; Display_Seven ; work         ;
+;    |Driver:dri1|           ; 156 (91)            ; 21 (2)                    ; 0                 ; 0          ; 0    ; 0            ; |TimeKeeper|Driver:dri1              ; Driver        ; work         ;
+;       |DeMux:demux1|       ; 16 (16)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TimeKeeper|Driver:dri1|DeMux:demux1 ; DeMux         ; work         ;
+;       |SPI:spi1|           ; 49 (49)             ; 19 (19)                   ; 0                 ; 0          ; 0    ; 0            ; |TimeKeeper|Driver:dri1|SPI:spi1     ; SPI           ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------+---------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                   ;
++-----------------------------------------------------+------------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal    ; Free of Timing Hazards ;
++-----------------------------------------------------+------------------------+------------------------+
+; Driver:dri1|Minutes[4]                              ; Driver:dri1|Minutes[7] ; yes                    ;
+; Driver:dri1|Minutes[5]                              ; Driver:dri1|Minutes[7] ; yes                    ;
+; Driver:dri1|Minutes[6]                              ; Driver:dri1|Minutes[7] ; yes                    ;
+; Driver:dri1|Minutes[7]                              ; Driver:dri1|Minutes[7] ; yes                    ;
+; Driver:dri1|Minutes[0]                              ; Driver:dri1|Minutes[7] ; yes                    ;
+; Driver:dri1|Minutes[1]                              ; Driver:dri1|Minutes[7] ; yes                    ;
+; Driver:dri1|Minutes[2]                              ; Driver:dri1|Minutes[7] ; yes                    ;
+; Driver:dri1|Minutes[3]                              ; Driver:dri1|Minutes[7] ; yes                    ;
+; Driver:dri1|Seconds[4]                              ; Driver:dri1|Seconds[7] ; yes                    ;
+; Driver:dri1|Seconds[5]                              ; Driver:dri1|Seconds[7] ; yes                    ;
+; Driver:dri1|Seconds[6]                              ; Driver:dri1|Seconds[7] ; yes                    ;
+; Driver:dri1|Seconds[7]                              ; Driver:dri1|Seconds[7] ; yes                    ;
+; Driver:dri1|Seconds[0]                              ; Driver:dri1|Seconds[7] ; yes                    ;
+; Driver:dri1|Seconds[1]                              ; Driver:dri1|Seconds[7] ; yes                    ;
+; Driver:dri1|Seconds[2]                              ; Driver:dri1|Seconds[7] ; yes                    ;
+; Driver:dri1|Seconds[3]                              ; Driver:dri1|Seconds[7] ; yes                    ;
+; Driver:dri1|start                                   ; Driver:dri1|WideOr24   ; yes                    ;
+; Driver:dri1|DeMux:demux1|Port2[4]                   ; Driver:dri1|sel        ; yes                    ;
+; Driver:dri1|process_cnt.00000111_835                ; Driver:dri1|Selector53 ; yes                    ;
+; Driver:dri1|DeMux:demux1|Port2[5]                   ; Driver:dri1|sel        ; yes                    ;
+; Driver:dri1|DeMux:demux1|Port2[6]                   ; Driver:dri1|sel        ; yes                    ;
+; Driver:dri1|DeMux:demux1|Port2[7]                   ; Driver:dri1|sel        ; yes                    ;
+; Driver:dri1|DeMux:demux1|Port2[0]                   ; Driver:dri1|sel        ; yes                    ;
+; Driver:dri1|DeMux:demux1|Port2[1]                   ; Driver:dri1|sel        ; yes                    ;
+; Driver:dri1|DeMux:demux1|Port2[2]                   ; Driver:dri1|sel        ; yes                    ;
+; Driver:dri1|DeMux:demux1|Port2[3]                   ; Driver:dri1|sel        ; yes                    ;
+; Driver:dri1|DeMux:demux1|Port1[4]                   ; Driver:dri1|sel        ; yes                    ;
+; Driver:dri1|process_cnt.00000100_862                ; Driver:dri1|Selector53 ; yes                    ;
+; Driver:dri1|DeMux:demux1|Port1[5]                   ; Driver:dri1|sel        ; yes                    ;
+; Driver:dri1|DeMux:demux1|Port1[6]                   ; Driver:dri1|sel        ; yes                    ;
+; Driver:dri1|DeMux:demux1|Port1[7]                   ; Driver:dri1|sel        ; yes                    ;
+; Driver:dri1|DeMux:demux1|Port1[0]                   ; Driver:dri1|sel        ; yes                    ;
+; Driver:dri1|DeMux:demux1|Port1[1]                   ; Driver:dri1|sel        ; yes                    ;
+; Driver:dri1|DeMux:demux1|Port1[2]                   ; Driver:dri1|sel        ; yes                    ;
+; Driver:dri1|DeMux:demux1|Port1[3]                   ; Driver:dri1|sel        ; yes                    ;
+; Driver:dri1|dir[1]                                  ; Driver:dri1|WideOr22   ; yes                    ;
+; Driver:dri1|dir[0]                                  ; Driver:dri1|WideOr22   ; yes                    ;
+; Driver:dri1|process_cnt.00010011_726                ; Driver:dri1|Selector53 ; yes                    ;
+; Driver:dri1|process_cnt.00010001_744                ; Driver:dri1|Selector53 ; yes                    ;
+; Driver:dri1|process_cnt.00001110_771                ; Driver:dri1|Selector53 ; yes                    ;
+; Driver:dri1|process_cnt.00001011_798                ; Driver:dri1|Selector53 ; yes                    ;
+; Driver:dri1|process_cnt.00001000_826                ; Driver:dri1|Selector53 ; yes                    ;
+; Driver:dri1|process_cnt.00000110_844                ; Driver:dri1|Selector53 ; yes                    ;
+; Driver:dri1|process_cnt.00000011_871                ; Driver:dri1|Selector53 ; yes                    ;
+; Driver:dri1|process_cnt.00010010_735                ; Driver:dri1|Selector53 ; yes                    ;
+; Driver:dri1|process_cnt.00001111_762                ; Driver:dri1|Selector53 ; yes                    ;
+; Driver:dri1|process_cnt.00001100_789                ; Driver:dri1|Selector53 ; yes                    ;
+; Driver:dri1|process_cnt.00000000_899                ; Driver:dri1|Selector53 ; yes                    ;
+; Driver:dri1|process_cnt.00000001_890                ; GND                    ; yes                    ;
+; Driver:dri1|process_cnt.00001001_817                ; GND                    ; yes                    ;
+; Driver:dri1|process_cnt.00010000_753                ; Driver:dri1|Selector53 ; yes                    ;
+; Driver:dri1|process_cnt.00001101_780                ; Driver:dri1|Selector53 ; yes                    ;
+; Driver:dri1|process_cnt.00001010_807                ; Driver:dri1|Selector53 ; yes                    ;
+; Driver:dri1|process_cnt.00000101_853                ; Driver:dri1|Selector53 ; yes                    ;
+; Driver:dri1|process_cnt.00000010_880                ; Driver:dri1|Selector53 ; yes                    ;
+; Driver:dri1|sel                                     ; Driver:dri1|WideOr26   ; yes                    ;
+; Driver:dri1|finish_process                          ; Driver:dri1|WideOr0    ; yes                    ;
+; Driver:dri1|wr_addr[0]                              ; Driver:dri1|Selector27 ; yes                    ;
+; Driver:dri1|wr_addr[1]                              ; Driver:dri1|Selector27 ; yes                    ;
+; Driver:dri1|wr_addr[2]                              ; Driver:dri1|Selector26 ; yes                    ;
+; Driver:dri1|wr_addr[7]                              ; Driver:dri1|Selector26 ; yes                    ;
+; Driver:dri1|wr_data[0]                              ; Driver:dri1|WideOr28   ; yes                    ;
+; Driver:dri1|wr_data[1]                              ; Driver:dri1|WideOr28   ; yes                    ;
+; Driver:dri1|wr_data[4]                              ; Driver:dri1|WideOr28   ; yes                    ;
+; Driver:dri1|wr_data[5]                              ; Driver:dri1|WideOr28   ; yes                    ;
+; Driver:dri1|wr_data[2]                              ; Driver:dri1|WideOr28   ; yes                    ;
+; Number of user-specified and inferred latches = 66  ;                        ;                        ;
++-----------------------------------------------------+------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 50    ;
+; Number of registers using Synchronous Clear  ; 28    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 12    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
+; 65:1               ; 4 bits    ; 172 LEs       ; 16 LEs               ; 156 LEs                ; Yes        ; |TimeKeeper|Driver:dri1|SPI:spi1|cnt[0]      ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |TimeKeeper|Driver:dri1|process_cnt.00001001 ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |TimeKeeper|Driver:dri1|Selector30           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |TimeKeeper ;
++---------------------+-------+----------------------------------------------+
+; Parameter Name      ; Value ; Type                                         ;
++---------------------+-------+----------------------------------------------+
+; SEVENSEGMENT_LENGTH ; 7     ; Signed Integer                               ;
+; DATA_LENGTH         ; 8     ; Signed Integer                               ;
+; UNITS_LENGTH        ; 4     ; Signed Integer                               ;
++---------------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Clock_divider:clkdiv1 ;
++----------------+------------------------------+--------------------+
+; Parameter Name ; Value                        ; Type               ;
++----------------+------------------------------+--------------------+
+; DIVISOR        ; 0000000000000000000000011001 ; Unsigned Binary    ;
++----------------+------------------------------+--------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Driver:dri1 ;
++-----------------+----------+-----------------------------+
+; Parameter Name  ; Value    ; Type                        ;
++-----------------+----------+-----------------------------+
+; Hours_default   ; 00010011 ; Unsigned Binary             ;
+; Minutes_default ; 00100100 ; Unsigned Binary             ;
+; Seconds_default ; 00110000 ; Unsigned Binary             ;
++-----------------+----------+-----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------+
+; Port Connectivity Checks: "Driver:dri1|SPI:spi1" ;
++---------------+-------+----------+---------------+
+; Port          ; Type  ; Severity ; Details       ;
++---------------+-------+----------+---------------+
+; wr_addr[6..3] ; Input ; Info     ; Stuck at GND  ;
+; wr_data[7..6] ; Input ; Info     ; Stuck at GND  ;
+; wr_data[3]    ; Input ; Info     ; Stuck at GND  ;
++---------------+-------+----------+---------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 50                          ;
+;     CLR               ; 12                          ;
+;     SCLR              ; 28                          ;
+;     plain             ; 10                          ;
+; arriav_io_obuf        ; 1                           ;
+; arriav_lcell_comb     ; 224                         ;
+;     arith             ; 28                          ;
+;         1 data inputs ; 28                          ;
+;     extend            ; 1                           ;
+;         7 data inputs ; 1                           ;
+;     normal            ; 195                         ;
+;         1 data inputs ; 4                           ;
+;         2 data inputs ; 14                          ;
+;         3 data inputs ; 41                          ;
+;         4 data inputs ; 92                          ;
+;         5 data inputs ; 16                          ;
+;         6 data inputs ; 28                          ;
+; boundary_port         ; 35                          ;
+;                       ;                             ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 2.25                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Sun May 22 16:26:40 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TimeKeeper -c TimeKeeper
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /users/sangt/onedrive/project/job/rmit/lab3/part2/src/demux.sv
+    Info (12023): Found entity 1: DeMux File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/DeMux.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/sangt/onedrive/project/job/rmit/lab3/part2/modelsim_testbench/timekeeper_tb.sv
+    Info (12023): Found entity 1: TimeKeeper_tb File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/sangt/onedrive/project/job/rmit/lab3/part2/modelsim_testbench/spi_tb.sv
+    Info (12023): Found entity 1: SPI_tb File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/SPI_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/sangt/onedrive/project/job/rmit/lab3/part2/modelsim_testbench/driver_tb.sv
+    Info (12023): Found entity 1: Driver_tb File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/Driver_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/sangt/onedrive/project/job/rmit/lab3/part2/modelsim_testbench/display_seven_tb.sv
+    Info (12023): Found entity 1: Display_Seven_tb File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/Display_Seven_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/sangt/onedrive/project/job/rmit/lab3/part2/src/timekeeper.sv
+    Info (12023): Found entity 1: TimeKeeper File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/TimeKeeper.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/sangt/onedrive/project/job/rmit/lab3/part2/src/spi.sv
+    Info (12023): Found entity 1: SPI File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/SPI.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/sangt/onedrive/project/job/rmit/lab3/part2/src/driver.sv
+    Info (12023): Found entity 1: Driver File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/sangt/onedrive/project/job/rmit/lab3/part2/src/display_seven.sv
+    Info (12023): Found entity 1: Display_Seven File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Display_Seven.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/sangt/onedrive/project/job/rmit/lab3/part2/src/decoder.sv
+    Info (12023): Found entity 1: Decoder File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Decoder.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/sangt/onedrive/project/job/rmit/lab3/part2/src/clock_divider.sv
+    Info (12023): Found entity 1: Clock_divider File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Clock_Divider.sv Line: 2
+Info (12127): Elaborating entity "TimeKeeper" for the top level hierarchy
+Info (12128): Elaborating entity "Clock_divider" for hierarchy "Clock_divider:clkdiv1" File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/TimeKeeper.sv Line: 44
+Info (12128): Elaborating entity "Driver" for hierarchy "Driver:dri1" File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/TimeKeeper.sv Line: 55
+Info (10264): Verilog HDL Case Statement information at Driver.sv(76): all case item expressions in this case statement are onehot File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Warning (10240): Verilog HDL Always Construct warning at Driver.sv(62): inferring latch(es) for variable "process_cnt", which holds its previous value in one or more paths through the always construct File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 62
+Warning (10240): Verilog HDL Always Construct warning at Driver.sv(62): inferring latch(es) for variable "start", which holds its previous value in one or more paths through the always construct File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 62
+Warning (10240): Verilog HDL Always Construct warning at Driver.sv(62): inferring latch(es) for variable "wr_addr", which holds its previous value in one or more paths through the always construct File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 62
+Warning (10240): Verilog HDL Always Construct warning at Driver.sv(62): inferring latch(es) for variable "wr_data", which holds its previous value in one or more paths through the always construct File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 62
+Warning (10240): Verilog HDL Always Construct warning at Driver.sv(62): inferring latch(es) for variable "dir", which holds its previous value in one or more paths through the always construct File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 62
+Warning (10240): Verilog HDL Always Construct warning at Driver.sv(62): inferring latch(es) for variable "Minutes", which holds its previous value in one or more paths through the always construct File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 62
+Warning (10240): Verilog HDL Always Construct warning at Driver.sv(62): inferring latch(es) for variable "Seconds", which holds its previous value in one or more paths through the always construct File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 62
+Warning (10240): Verilog HDL Always Construct warning at Driver.sv(62): inferring latch(es) for variable "sel", which holds its previous value in one or more paths through the always construct File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 62
+Warning (10240): Verilog HDL Always Construct warning at Driver.sv(62): inferring latch(es) for variable "finish_process", which holds its previous value in one or more paths through the always construct File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 62
+Info (10041): Inferred latch for "finish_process" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "sel" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "Seconds[0]" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "Seconds[1]" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "Seconds[2]" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "Seconds[3]" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "Seconds[4]" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "Seconds[5]" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "Seconds[6]" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "Seconds[7]" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "Minutes[0]" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "Minutes[1]" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "Minutes[2]" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "Minutes[3]" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "Minutes[4]" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "Minutes[5]" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "Minutes[6]" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "Minutes[7]" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "dir[0]" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "dir[1]" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "wr_data[0]" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "wr_data[1]" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "wr_data[2]" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "wr_data[3]" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "wr_data[4]" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "wr_data[5]" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "wr_data[6]" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "wr_data[7]" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "wr_addr[0]" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "wr_addr[1]" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "wr_addr[2]" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "wr_addr[3]" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "wr_addr[4]" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "wr_addr[5]" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "wr_addr[6]" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "wr_addr[7]" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "start" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "process_cnt.00010100" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "process_cnt.00010011" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "process_cnt.00010010" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "process_cnt.00010001" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "process_cnt.00010000" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "process_cnt.00001111" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "process_cnt.00001110" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "process_cnt.00001101" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "process_cnt.00001100" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "process_cnt.00001011" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "process_cnt.00001010" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "process_cnt.00001001" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "process_cnt.00001000" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "process_cnt.00000111" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "process_cnt.00000110" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "process_cnt.00000101" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "process_cnt.00000100" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "process_cnt.00000011" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "process_cnt.00000010" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "process_cnt.00000001" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (10041): Inferred latch for "process_cnt.00000000" at Driver.sv(76) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (12128): Elaborating entity "DeMux" for hierarchy "Driver:dri1|DeMux:demux1" File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 47
+Warning (10240): Verilog HDL Always Construct warning at DeMux.sv(13): inferring latch(es) for variable "Port1", which holds its previous value in one or more paths through the always construct File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/DeMux.sv Line: 13
+Warning (10240): Verilog HDL Always Construct warning at DeMux.sv(13): inferring latch(es) for variable "Port2", which holds its previous value in one or more paths through the always construct File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/DeMux.sv Line: 13
+Info (10041): Inferred latch for "Port2[0]" at DeMux.sv(16) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/DeMux.sv Line: 16
+Info (10041): Inferred latch for "Port2[1]" at DeMux.sv(16) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/DeMux.sv Line: 16
+Info (10041): Inferred latch for "Port2[2]" at DeMux.sv(16) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/DeMux.sv Line: 16
+Info (10041): Inferred latch for "Port2[3]" at DeMux.sv(16) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/DeMux.sv Line: 16
+Info (10041): Inferred latch for "Port2[4]" at DeMux.sv(16) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/DeMux.sv Line: 16
+Info (10041): Inferred latch for "Port2[5]" at DeMux.sv(16) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/DeMux.sv Line: 16
+Info (10041): Inferred latch for "Port2[6]" at DeMux.sv(16) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/DeMux.sv Line: 16
+Info (10041): Inferred latch for "Port2[7]" at DeMux.sv(16) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/DeMux.sv Line: 16
+Info (10041): Inferred latch for "Port1[0]" at DeMux.sv(16) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/DeMux.sv Line: 16
+Info (10041): Inferred latch for "Port1[1]" at DeMux.sv(16) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/DeMux.sv Line: 16
+Info (10041): Inferred latch for "Port1[2]" at DeMux.sv(16) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/DeMux.sv Line: 16
+Info (10041): Inferred latch for "Port1[3]" at DeMux.sv(16) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/DeMux.sv Line: 16
+Info (10041): Inferred latch for "Port1[4]" at DeMux.sv(16) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/DeMux.sv Line: 16
+Info (10041): Inferred latch for "Port1[5]" at DeMux.sv(16) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/DeMux.sv Line: 16
+Info (10041): Inferred latch for "Port1[6]" at DeMux.sv(16) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/DeMux.sv Line: 16
+Info (10041): Inferred latch for "Port1[7]" at DeMux.sv(16) File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/DeMux.sv Line: 16
+Info (12128): Elaborating entity "SPI" for hierarchy "Driver:dri1|SPI:spi1" File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 60
+Info (12128): Elaborating entity "Decoder" for hierarchy "Decoder:dec1" File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/TimeKeeper.sv Line: 63
+Info (12128): Elaborating entity "Display_Seven" for hierarchy "Display_Seven:led3" File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/TimeKeeper.sv Line: 67
+Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
+    Info (13026): Duplicate LATCH primitive "Driver:dri1|wr_data[1]" merged with LATCH primitive "Driver:dri1|wr_data[0]" File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Warning (13012): Latch Driver:dri1|start has unsafe behavior File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Driver:dri1|process_cnt.00010011_726 File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Warning (13012): Latch Driver:dri1|dir[1] has unsafe behavior File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Driver:dri1|process_cnt.00001001_817 File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Warning (13012): Latch Driver:dri1|dir[0] has unsafe behavior File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Driver:dri1|process_cnt.00000001_890 File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Warning (13012): Latch Driver:dri1|process_cnt.00000000_899 has unsafe behavior File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Driver:dri1|process_cnt.00000000_899 File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Warning (13012): Latch Driver:dri1|sel has unsafe behavior File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 42
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Driver:dri1|process_cnt.00000111_835 File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Warning (13012): Latch Driver:dri1|finish_process has unsafe behavior File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 38
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Driver:dri1|process_cnt.00010011_726 File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Warning (13012): Latch Driver:dri1|wr_addr[0] has unsafe behavior File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Driver:dri1|process_cnt.00000001_890 File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Warning (13012): Latch Driver:dri1|wr_addr[1] has unsafe behavior File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Driver:dri1|process_cnt.00001100_789 File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Warning (13012): Latch Driver:dri1|wr_addr[2] has unsafe behavior File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Driver:dri1|process_cnt.00001111_762 File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Warning (13012): Latch Driver:dri1|wr_data[0] has unsafe behavior File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Driver:dri1|process_cnt.00001111_762 File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Warning (13012): Latch Driver:dri1|wr_data[4] has unsafe behavior File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Driver:dri1|process_cnt.00001111_762 File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Warning (13012): Latch Driver:dri1|wr_data[5] has unsafe behavior File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Driver:dri1|process_cnt.00001111_762 File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Warning (13012): Latch Driver:dri1|wr_data[2] has unsafe behavior File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Driver:dri1|process_cnt.00001111_762 File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 76
+Info (286030): Timing-Driven Synthesis is running
+Info (144001): Generated suppressed messages file C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/quatus/output_files/TimeKeeper.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 255 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
+    Info (21059): Implemented 30 output pins
+    Info (21060): Implemented 1 bidirectional pins
+    Info (21061): Implemented 220 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 38 warnings
+    Info: Peak virtual memory: 4847 megabytes
+    Info: Processing ended: Sun May 22 16:26:49 2022
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:22
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/quatus/output_files/TimeKeeper.map.smsg.
+
+

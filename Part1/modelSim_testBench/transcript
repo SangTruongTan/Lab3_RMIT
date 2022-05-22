@@ -3,13 +3,42 @@
 # Compile of StopWatch.sv was successful.
 # Compile of Display_Seven_tb.sv was successful.
 # Compile of StopWatch_tb.sv was successful.
-# Compile of Display_Seven.sv was successful.
-# 6 compiles, 0 failed with no errors.
+# 5 compiles, 1 failed with no errors.
+vsim work.FSM_tb
+# vsim work.FSM_tb 
+# Start time: 22:52:29 on May 19,2022
+# Loading sv_std.std
+# Loading work.FSM_tb
+# Loading work.FSM
+add wave -position insertpoint sim:/FSM_tb/*
+run
+# [time =0]Start TB
+# [time =40]Start/Stop = 0 => Start State
+# [time =120]Lap/Reset = 0 => Lap Records state
+# [time =160]Updated Lap = 1 => Start State
+# [time =200]Start/Stop = 0 => Start state
+# [time =280]Lap/Reset = 0 => Reset state
+vsim work.Display_Seven_tb
+# End time: 22:52:55 on May 19,2022, Elapsed time: 0:00:26
+# Errors: 0, Warnings: 2
+# vsim work.Display_Seven_tb 
+# Start time: 22:52:55 on May 19,2022
+# Loading sv_std.std
+# Loading work.Display_Seven_tb
+# Loading work.Display_Seven
+add wave -position insertpoint  \
+sim:/Display_Seven_tb/In
+add wave -position insertpoint  \
+sim:/Display_Seven_tb/Out
+run
 vsim work.StopWatch_tb
+# End time: 22:53:36 on May 19,2022, Elapsed time: 0:00:41
+# Errors: 0, Warnings: 1
 # vsim work.StopWatch_tb 
-# Start time: 22:47:18 on May 15,2022
+# Start time: 22:53:36 on May 19,2022
 # Loading sv_std.std
 # Loading work.StopWatch_tb
+# Loading work.Clock_divider1
 # Loading work.StopWatch
 # Loading work.FSM
 # Loading work.Clock_divider
@@ -17,8 +46,17 @@ vsim work.StopWatch_tb
 # Loading work.Display_Two
 # Loading work.Display_Seven
 # Loading work.Convert
+run
+# Stop!!!r
+# Total Time=7210
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv(94)
+#    Time: 7310 ps  Iteration: 0  Instance: /StopWatch_tb
+# Break in Module StopWatch_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv line 94
+add wave -position insertpoint  \
+sim:/StopWatch_tb/EHEX0
 add wave -position insertpoint  \
 sim:/StopWatch_tb/clk \
+sim:/StopWatch_tb/clk_1 \
 sim:/StopWatch_tb/EHEX0 \
 sim:/StopWatch_tb/EHEX0_Decimal \
 sim:/StopWatch_tb/EHEX1 \
@@ -48,364 +86,12 @@ sim:/StopWatch_tb/lap_reset \
 sim:/StopWatch_tb/rstn \
 sim:/StopWatch_tb/start_stop \
 sim:/StopWatch_tb/testVector
-run
-# [time =9020]Error => Stop at instruction =       451
-# ** Note: $finish    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv(96)
-#    Time: 9020 ps  Iteration: 1  Instance: /StopWatch_tb
-# 1
-# Break in Module StopWatch_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv line 96
-# Compile of FSM.sv was successful.
-# Compile of FSM_tb.sv was successful.
-# Compile of StopWatch.sv was successful.
-# Compile of Display_Seven_tb.sv was successful.
-# Compile of StopWatch_tb.sv was successful.
-# Compile of Display_Seven.sv was successful.
-# 6 compiles, 0 failed with no errors.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.StopWatch_tb
-# Loading work.StopWatch
-# Loading work.FSM
-# Loading work.Clock_divider
-# Loading work.Display_Four
-# Loading work.Display_Two
-# Loading work.Display_Seven
-# Loading work.Convert
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# [time =9020]Error => Stop at instruction =       451
-# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv(96)
-#    Time: 9020 ps  Iteration: 1  Instance: /StopWatch_tb
-# Break in Module StopWatch_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv line 96
-add wave -position insertpoint  \
-sim:/StopWatch_tb/stopwatch/Counter \
-sim:/StopWatch_tb/stopwatch/Lap_Counter
 restart
 run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# [time =9020]Error => Stop at instruction =       451
-# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv(96)
-#    Time: 9020 ps  Iteration: 1  Instance: /StopWatch_tb
-# Break in Module StopWatch_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv line 96
-restart
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# [time =9020]Error => Stop at instruction =       451
-# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv(96)
-#    Time: 9020 ps  Iteration: 1  Instance: /StopWatch_tb
-# Break in Module StopWatch_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv line 96
-add wave -position insertpoint  \
-sim:/StopWatch_tb/stopwatch/clk_10
-restart
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# [time =9020]Error => Stop at instruction =       451
-# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv(96)
-#    Time: 9020 ps  Iteration: 1  Instance: /StopWatch_tb
-# Break in Module StopWatch_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv line 96
-# Compile of FSM.sv was successful.
-# Compile of FSM_tb.sv was successful.
-# Compile of StopWatch.sv was successful.
-# Compile of Display_Seven_tb.sv was successful.
-# Compile of StopWatch_tb.sv was successful.
-# Compile of Display_Seven.sv was successful.
-# 6 compiles, 0 failed with no errors.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.StopWatch_tb
-# Loading work.Clock_divider1
-# Loading work.StopWatch
-# Loading work.FSM
-# Loading work.Clock_divider
-# Loading work.Display_Four
-# Loading work.Display_Two
-# Loading work.Display_Seven
-# Loading work.Convert
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (8) for port 'In'. The port definition is at: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/Display_Seven.sv(2).
-#    Time: 0 ps  Iteration: 0  Instance: /StopWatch_tb/stopwatch/displayfour1/dis1/display1 File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/src/StopWatch.sv Line: 157
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (8) for port 'In'. The port definition is at: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/Display_Seven.sv(2).
-#    Time: 0 ps  Iteration: 0  Instance: /StopWatch_tb/stopwatch/displayfour1/dis1/display2 File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/src/StopWatch.sv Line: 160
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (8) for port 'In'. The port definition is at: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/Display_Seven.sv(2).
-#    Time: 0 ps  Iteration: 0  Instance: /StopWatch_tb/stopwatch/displayfour1/dis2/display1 File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/src/StopWatch.sv Line: 157
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (8) for port 'In'. The port definition is at: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/Display_Seven.sv(2).
-#    Time: 0 ps  Iteration: 0  Instance: /StopWatch_tb/stopwatch/displayfour1/dis2/display2 File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/src/StopWatch.sv Line: 160
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (8) for port 'In'. The port definition is at: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/Display_Seven.sv(2).
-#    Time: 0 ps  Iteration: 0  Instance: /StopWatch_tb/stopwatch/displayfour2/dis1/display1 File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/src/StopWatch.sv Line: 157
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (8) for port 'In'. The port definition is at: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/Display_Seven.sv(2).
-#    Time: 0 ps  Iteration: 0  Instance: /StopWatch_tb/stopwatch/displayfour2/dis1/display2 File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/src/StopWatch.sv Line: 160
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (8) for port 'In'. The port definition is at: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/Display_Seven.sv(2).
-#    Time: 0 ps  Iteration: 0  Instance: /StopWatch_tb/stopwatch/displayfour2/dis2/display1 File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/src/StopWatch.sv Line: 157
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (8) for port 'In'. The port definition is at: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/Display_Seven.sv(2).
-#    Time: 0 ps  Iteration: 0  Instance: /StopWatch_tb/stopwatch/displayfour2/dis2/display2 File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/src/StopWatch.sv Line: 160
-# Compile of FSM.sv was successful.
-# Compile of FSM_tb.sv was successful.
-# Compile of StopWatch.sv was successful.
-# Compile of Display_Seven_tb.sv was successful.
-# Compile of StopWatch_tb.sv was successful.
-# Compile of Display_Seven.sv was successful.
-# 6 compiles, 0 failed with no errors.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.StopWatch_tb
-# Loading work.Clock_divider1
-# Loading work.StopWatch
-# Loading work.FSM
-# Loading work.Clock_divider
-# Loading work.Display_Four
-# Loading work.Display_Two
-# Loading work.Display_Seven
-# Loading work.Convert
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# [time =1010]Error => Stop at instruction =         2
-# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv(101)
-#    Time: 1010 ps  Iteration: 2  Instance: /StopWatch_tb
-# Break in Module StopWatch_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv line 101
-restart
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# [time =1010]Error => Stop at instruction =         2
-# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv(101)
-#    Time: 1010 ps  Iteration: 2  Instance: /StopWatch_tb
-# Break in Module StopWatch_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv line 101
-add wave -position insertpoint sim:/StopWatch_tb/stopwatch/displayfour1/*
-restart
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# [time =1010]Error => Stop at instruction =         2
-# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv(101)
-#    Time: 1010 ps  Iteration: 2  Instance: /StopWatch_tb
-# Break in Module StopWatch_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv line 101
-# Compile of FSM.sv was successful.
-# Compile of FSM_tb.sv was successful.
-# Compile of StopWatch.sv failed with 1 errors.
-# Compile of Display_Seven_tb.sv was successful.
-# Compile of StopWatch_tb.sv was successful.
-# Compile of Display_Seven.sv was successful.
-# 6 compiles, 1 failed with 1 error.
-# Compile of StopWatch.sv failed with 1 errors.
-# Compile of StopWatch.sv was successful.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.StopWatch_tb
-# Loading work.Clock_divider1
-# Loading work.StopWatch
-# Loading work.FSM
-# Loading work.Clock_divider
-# Loading work.Display_Four
-# Loading work.Display_Two
-# Loading work.Display_Seven
-# Loading work.Convert
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# [time =1010]Error => Stop at instruction =         2
-# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv(101)
-#    Time: 1010 ps  Iteration: 2  Instance: /StopWatch_tb
-# Break in Module StopWatch_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv line 101
-restart
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# [time =1010]Error => Stop at instruction =         2
-# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv(101)
-#    Time: 1010 ps  Iteration: 2  Instance: /StopWatch_tb
-# Break in Module StopWatch_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv line 101
-# Compile of FSM.sv was successful.
-# Compile of FSM_tb.sv was successful.
-# Compile of StopWatch.sv was successful.
-# Compile of Display_Seven_tb.sv was successful.
-# Compile of StopWatch_tb.sv was successful.
-# Compile of Display_Seven.sv was successful.
-# 6 compiles, 0 failed with no errors.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.StopWatch_tb
-# Loading work.Clock_divider1
-# Loading work.StopWatch
-# Loading work.FSM
-# Loading work.Clock_divider
-# Loading work.Display_Four
-# Loading work.Display_Two
-# Loading work.Display_Seven
-# Loading work.Convert
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# [time =1010]Error => Stop at instruction =2
-# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv(102)
-#    Time: 1010 ps  Iteration: 2  Instance: /StopWatch_tb
-# Break in Module StopWatch_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv line 102
-# Compile of FSM.sv was successful.
-# Compile of FSM_tb.sv was successful.
-# Compile of StopWatch.sv was successful.
-# Compile of Display_Seven_tb.sv was successful.
-# Compile of StopWatch_tb.sv was successful.
-# Compile of Display_Seven.sv was successful.
-# 6 compiles, 0 failed with no errors.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.StopWatch_tb
-# Loading work.Clock_divider1
-# Loading work.StopWatch
-# Loading work.FSM
-# Loading work.Clock_divider
-# Loading work.Display_Four
-# Loading work.Display_Two
-# Loading work.Display_Seven
-# Loading work.Convert
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# [time =1010]Error => Stop at instruction =2
-# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv(103)
-#    Time: 1110 ps  Iteration: 0  Instance: /StopWatch_tb
-# Break in Module StopWatch_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv line 103
-add wave -position insertpoint  \
-sim:/StopWatch_tb/EHEX0_Decimal \
-sim:/StopWatch_tb/EHEX1 \
-sim:/StopWatch_tb/EHEX1_Decimal \
-sim:/StopWatch_tb/EHEX2 \
-sim:/StopWatch_tb/EHEX2_Decimal \
-sim:/StopWatch_tb/EHEX3 \
-sim:/StopWatch_tb/EHEX3_Decimal \
-sim:/StopWatch_tb/EHEX4 \
-sim:/StopWatch_tb/EHEX4_Decimal
-restart
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# [time =1010]Error => Stop at instruction =2
-# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv(103)
-#    Time: 1110 ps  Iteration: 0  Instance: /StopWatch_tb
-# Break in Module StopWatch_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv line 103
-# Compile of StopWatch_tb.sv was successful.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.StopWatch_tb
-# Loading work.Clock_divider1
-# Loading work.Convert
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# [time =1010]Error => Stop at instruction =2
-# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv(103)
-#    Time: 1110 ps  Iteration: 0  Instance: /StopWatch_tb
-# Break in Module StopWatch_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv line 103
-add wave -position insertpoint  \
-sim:/StopWatch_tb/clk_1
-restart
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# [time =1010]Error => Stop at instruction =2
-# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv(103)
-#    Time: 1110 ps  Iteration: 0  Instance: /StopWatch_tb
-# Break in Module StopWatch_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv line 103
-# Compile of StopWatch_tb.sv was successful.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.StopWatch_tb
-# Loading work.Clock_divider1
-# Loading work.Convert
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# [time =1810]Error => Stop at instruction =4
-# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv(103)
-#    Time: 1910 ps  Iteration: 0  Instance: /StopWatch_tb
-# Break in Module StopWatch_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv line 103
-restart
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: (vsim-PLI-3406) Too many digits (10) in data on line 16 of file "StopWatch_tb_vector.txt". (Max is 9.)    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv(84)
-#    Time: 0 ps  Iteration: 0  Instance: /StopWatch_tb
-# [time =1810]Error => Stop at instruction =4
-# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv(103)
-#    Time: 1910 ps  Iteration: 0  Instance: /StopWatch_tb
-# Break in Module StopWatch_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv line 103
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: (vsim-PLI-3406) Too many digits (10) in data on line 16 of file "StopWatch_tb_vector.txt". (Max is 9.)    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv(84)
-#    Time: 0 ps  Iteration: 0  Instance: /StopWatch_tb
-# [time =3010]Error => Stop at instruction =7
-# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv(103)
-#    Time: 3110 ps  Iteration: 0  Instance: /StopWatch_tb
-# Break in Module StopWatch_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv line 103
-add wave -position insertpoint  \
-sim:/StopWatch_tb/stopwatch/fsm1/state
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: (vsim-PLI-3406) Too many digits (10) in data on line 16 of file "StopWatch_tb_vector.txt". (Max is 9.)    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv(84)
-#    Time: 0 ps  Iteration: 0  Instance: /StopWatch_tb
-# [time =3010]Error => Stop at instruction =7
-# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv(103)
-#    Time: 3110 ps  Iteration: 0  Instance: /StopWatch_tb
-# Break in Module StopWatch_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv line 103
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: (vsim-PLI-3406) Too many digits (10) in data on line 16 of file "StopWatch_tb_vector.txt". (Max is 9.)    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv(84)
-#    Time: 0 ps  Iteration: 0  Instance: /StopWatch_tb
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: (vsim-PLI-3406) Too many digits (10) in data on line 16 of file "StopWatch_tb_vector.txt". (Max is 9.)    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv(84)
-#    Time: 0 ps  Iteration: 0  Instance: /StopWatch_tb
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: (vsim-PLI-3406) Too many digits (10) in data on line 16 of file "StopWatch_tb_vector.txt". (Max is 9.)    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv(84)
-#    Time: 0 ps  Iteration: 0  Instance: /StopWatch_tb
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
 # Stop!!!r
 # Total Time=7210
 # ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv(94)
 #    Time: 7310 ps  Iteration: 0  Instance: /StopWatch_tb
 # Break in Module StopWatch_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv line 94
+# End time: 22:54:11 on May 19,2022, Elapsed time: 0:00:35
+# Errors: 0, Warnings: 1

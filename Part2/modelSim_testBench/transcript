@@ -1,0 +1,1910 @@
+# Compile of SPI_tb.sv was successful.
+vsim work.SPI_tb
+# vsim work.SPI_tb 
+# Start time: 07:41:33 on May 21,2022
+# Loading sv_std.std
+# Loading work.SPI_tb
+# Loading work.SPI
+add wave -position insertpoint  \
+sim:/SPI_tb/ce \
+sim:/SPI_tb/clk \
+sim:/SPI_tb/dir \
+sim:/SPI_tb/dir_io \
+sim:/SPI_tb/finish \
+sim:/SPI_tb/gen_io \
+sim:/SPI_tb/io \
+sim:/SPI_tb/rd \
+sim:/SPI_tb/start_rw \
+sim:/SPI_tb/sclk \
+sim:/SPI_tb/wr_addr \
+sim:/SPI_tb/wr_data
+run
+# [time =0]Intialize the test bench
+# [time =40]Simulate read process
+# [time =1385]Simulate write process
+# Compile of SPI_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SPI_tb
+run
+# [time =0]Intialize the test bench
+# [time =40]Simulate read process
+# [time =1385]Simulate write process
+# Compile of SPI_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SPI_tb
+run
+# [time =0]Intialize the test bench
+# [time =40]Simulate read process
+# [time =1385]Simulate write process
+# [time =2985]Finish simulation
+# Compile of SPI_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SPI_tb
+run
+# [time =0]Intialize the test bench
+# [time =40]Simulate read process
+# [time =1385]Simulate write process
+# [time =3030]Finish simulation
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/SPI_tb.sv(66)
+#    Time: 3030 ps  Iteration: 0  Instance: /SPI_tb
+# Break in Module SPI_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/SPI_tb.sv line 66
+# Compile of SPI_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SPI_tb
+run
+# [time =0]Intialize the test bench
+# [time =40]Simulate read process
+# [time =1385]Simulate write process
+# [time =3030]Finish simulation
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/SPI_tb.sv(66)
+#    Time: 3030 ps  Iteration: 0  Instance: /SPI_tb
+# Break in Module SPI_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/SPI_tb.sv line 66
+# Compile of SPI.sv was successful.
+# Compile of SPI_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SPI_tb
+# Loading work.SPI
+run
+# [time =0]Intialize the test bench
+# [time =40]Simulate read process
+# [time =1385]Simulate write process
+# [time =3075]Finish simulation
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/SPI_tb.sv(67)
+#    Time: 3075 ps  Iteration: 0  Instance: /SPI_tb
+# Break in Module SPI_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/SPI_tb.sv line 67
+# Compile of SPI_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SPI_tb
+run
+# [time =0]Intialize the test bench
+# [time =40]Simulate read process
+# [time =1485]Simulate write process
+# [time =3175]Finish simulation
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/SPI_tb.sv(67)
+#    Time: 3175 ps  Iteration: 0  Instance: /SPI_tb
+# Break in Module SPI_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/SPI_tb.sv line 67
+# Compile of SPI_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SPI_tb
+run
+# [time =0]Intialize the test bench
+# [time =40]Simulate read process
+# [time =1485]Simulate write process
+# [time =3230]Finish simulation
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/SPI_tb.sv(67)
+#    Time: 3230 ps  Iteration: 0  Instance: /SPI_tb
+# Break in Module SPI_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/SPI_tb.sv line 67
+# Compile of SPI_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SPI_tb
+run
+# [time =0]Intialize the test bench
+# [time =40]Simulate read process
+# [time =1485]Simulate write process
+# [time =3230]Finish simulation
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/SPI_tb.sv(67)
+#    Time: 3230 ps  Iteration: 0  Instance: /SPI_tb
+# Break in Module SPI_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/SPI_tb.sv line 67
+# Compile of SPI_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SPI_tb
+run
+# [time =0]Intialize the test bench
+# [time =40]Simulate read process
+# [time =1485]Simulate write process
+# [time =3230]Finish simulation
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/SPI_tb.sv(67)
+#    Time: 3230 ps  Iteration: 0  Instance: /SPI_tb
+# Break in Module SPI_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/SPI_tb.sv line 67
+# Compile of SPI_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SPI_tb
+run
+# [time =0]Intialize the test bench
+# [time =40]Simulate read process
+# [time =1485]Simulate write process
+# [time =3230]Finish simulation
+# Compile of SPI.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SPI
+run
+# [time =0]Intialize the test bench
+# [time =40]Simulate read process
+# [time =1485]Simulate write process
+# [time =3230]Finish simulation
+# Compile of SPI.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SPI
+run
+# [time =0]Intialize the test bench
+# [time =40]Simulate read process
+# [time =1485]Simulate write process
+# [time =3230]Finish simulation
+add wave -position insertpoint  \
+sim:/SPI_tb/spi1/cnt
+restart
+run
+# [time =0]Intialize the test bench
+# [time =40]Simulate read process
+# [time =1485]Simulate write process
+# [time =3230]Finish simulation
+# Compile of SPI.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SPI
+run
+# [time =0]Intialize the test bench
+# [time =40]Simulate read process
+# [time =1485]Simulate write process
+# [time =3230]Finish simulation
+# Compile of SPI.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SPI
+run
+# [time =0]Intialize the test bench
+# [time =40]Simulate read process
+# [time =1485]Simulate write process
+# [time =3230]Finish simulation
+# Compile of SPI.sv was successful.
+# Compile of SPI_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SPI_tb
+# Loading work.SPI
+run
+# [time =0]Intialize the test bench
+# [time =40]Simulate read process
+# [time =1485]Simulate write process
+# [time =3230]Finish simulation
+# Compile of SPI_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SPI_tb
+run
+# [time =0]Intialize the test bench
+# [time =40]Simulate read process
+# [time =1485]Simulate write process
+# [time =3230]Finish simulation
+# Compile of SPI.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SPI
+run
+# [time =0]Intialize the test bench
+# [time =40]Simulate read process
+# [time =1485]Simulate write process
+# [time =3230]Finish simulation
+# Compile of SPI.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SPI
+run
+# [time =0]Intialize the test bench
+# [time =40]Simulate read process
+# [time =1485]Simulate write process
+# [time =3230]Finish simulation
+# Compile of SPI.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SPI
+run
+# [time =0]Intialize the test bench
+# [time =40]Simulate read process
+# [time =1485]Simulate write process
+# [time =3230]Finish simulation
+# Compile of SPI_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SPI_tb
+run
+# [time =0]Intialize the test bench
+# [time =40]Simulate read process
+# [time =1485]Simulate write process
+# [time =3230]Finish simulation
+# Compile of SPI_tb.sv was successful.
+# Compile of SPI_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SPI_tb
+run
+# [time =0]Intialize the test bench
+# [time =40]Simulate read process
+# [time =1485]Simulate write process
+# [time =3230]Finish simulation
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/SPI_tb.sv(67)
+#    Time: 3230 ps  Iteration: 0  Instance: /SPI_tb
+# Break in Module SPI_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/SPI_tb.sv line 67
+# Compile of SPI_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SPI_tb
+run
+# [time =0]Intialize the test bench
+# [time =40]Simulate read process
+# [time =1485]Simulate write process
+# [time =3230]Finish simulation
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/SPI_tb.sv(67)
+#    Time: 3230 ps  Iteration: 0  Instance: /SPI_tb
+# Break in Module SPI_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/SPI_tb.sv line 67
+# Compile of SPI_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SPI_tb
+run
+# [time =0]Intialize the test bench
+# [time =40]Simulate read process
+# [time =1485]Simulate write process
+# [time =3130]Finish simulation
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/SPI_tb.sv(66)
+#    Time: 3130 ps  Iteration: 0  Instance: /SPI_tb
+# Break in Module SPI_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/SPI_tb.sv line 66
+# Compile of SPI_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SPI_tb
+run
+# [time =0]Intialize the test bench
+# [time =40]Simulate read process
+# [time =1485]Simulate write process
+# [time =3175]Finish simulation
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/SPI_tb.sv(70)
+#    Time: 3175 ps  Iteration: 0  Instance: /SPI_tb
+# Break in Module SPI_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/SPI_tb.sv line 70
+# Compile of SPI_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SPI_tb
+run
+# [time =0]Intialize the test bench
+# [time =40]Simulate read process
+# [time =1485]Simulate write process
+# [time =3375]Finish simulation
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/SPI_tb.sv(71)
+#    Time: 3375 ps  Iteration: 0  Instance: /SPI_tb
+# Break in Module SPI_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/SPI_tb.sv line 71
+# Compile of Driver.sv failed with 1 errors.
+# Compile of Driver.sv was successful.
+# Compile of Driver.sv was successful.
+# Compile of SPI_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SPI_tb
+run
+# [time =0]Intialize the test bench
+# [time =40]Simulate read process
+# [time =1485]Simulate write process
+# [time =3375]Finish simulation
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/SPI_tb.sv(71)
+#    Time: 3375 ps  Iteration: 0  Instance: /SPI_tb
+# Break in Module SPI_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/SPI_tb.sv line 71
+restart
+# Compile of SPI_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SPI_tb
+run
+# [time =0]Intialize the test bench
+# [time =40]Simulate read process
+# [time =1485]Simulate write process
+# [time =3375]Finish simulation
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/SPI_tb.sv(71)
+#    Time: 3375 ps  Iteration: 0  Instance: /SPI_tb
+# Break in Module SPI_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/SPI_tb.sv line 71
+# Compile of Driver.sv failed with 2 errors.
+# Compile of Driver.sv was successful.
+# Compile of Driver.sv was successful.
+# Compile of Driver_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+vsim work.Driver_tb
+# End time: 15:20:19 on May 21,2022, Elapsed time: 7:38:46
+# Errors: 0, Warnings: 1
+# vsim work.Driver_tb 
+# Start time: 15:20:19 on May 21,2022
+# Loading sv_std.std
+# Loading work.Driver_tb
+# Loading work.Driver
+# Loading work.Clock_divider
+# Loading work.gen_pulse
+# Loading work.SPI
+add wave -position insertpoint  \
+sim:/Driver_tb/CE \
+sim:/Driver_tb/clk50 \
+sim:/Driver_tb/dir_io \
+sim:/Driver_tb/gen_io \
+sim:/Driver_tb/IO \
+sim:/Driver_tb/Minutes \
+sim:/Driver_tb/read \
+sim:/Driver_tb/rstn \
+sim:/Driver_tb/SCLK \
+sim:/Driver_tb/Seconds \
+sim:/Driver_tb/write
+run
+# [time =0]Intialize the test bench
+# [time =40]Read time
+add wave -position insertpoint  \
+sim:/Driver_tb/driver1/process_start \
+sim:/Driver_tb/driver1/read_process
+# Compile of Driver.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver
+# Loading work.Clock_divider
+# Loading work.gen_pulse
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# [time =0]Intialize the test bench
+# [time =40]Read time
+add wave -position insertpoint  \
+sim:/Driver_tb/driver1/write_process
+restart
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# [time =0]Intialize the test bench
+# [time =40]Read time
+add wave -position insertpoint  \
+sim:/Driver_tb/driver1/clk2
+restart
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# [time =0]Intialize the test bench
+# [time =40]Read time
+# Compile of Driver.sv was successful.
+# Compile of Driver_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver_tb
+# Loading work.Driver
+# Loading work.Clock_divider
+# Loading work.gen_pulse
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# [time =0]Intialize the test bench
+# [time =40]Read time
+add wave -position insertpoint  \
+sim:/Driver_tb/driver1/process_cnt
+restart
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# [time =0]Intialize the test bench
+# [time =40]Read time
+# Compile of Driver.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver
+# Loading work.Clock_divider
+# Loading work.gen_pulse
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# [time =0]Intialize the test bench
+# [time =40]Read time
+add wave -position insertpoint  \
+sim:/Driver_tb/driver1/start
+restart
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# [time =0]Intialize the test bench
+# [time =40]Read time
+# Compile of Driver.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver
+# Loading work.Clock_divider
+# Loading work.gen_pulse
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# [time =0]Intialize the test bench
+# [time =40]Read time
+# Compile of Driver.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver
+# Loading work.Clock_divider
+# Loading work.gen_pulse
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# [time =0]Intialize the test bench
+# [time =40]Read time
+add wave -position insertpoint  \
+sim:/Driver_tb/driver1/process_start
+# Compile of Driver.sv failed with 1 errors.
+# Compile of Driver.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver
+# Loading work.Clock_divider
+# Loading work.gen_pulse
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# [time =0]Intialize the test bench
+# [time =40]Read time
+# Compile of Driver.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver
+# Loading work.Clock_divider
+# Loading work.gen_pulse
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# [time =0]Intialize the test bench
+# [time =40]Read time
+# Compile of Driver.sv failed with 2 errors.
+# Compile of Driver.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver
+# Loading work.Clock_divider
+# Loading work.gen_pulse
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# [time =0]Intialize the test bench
+# [time =40]Read time
+# Compile of Driver.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver
+# Loading work.Clock_divider
+# Loading work.gen_pulse
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# [time =0]Intialize the test bench
+# [time =40]Read time
+add wave -position insertpoint  \
+sim:/Driver_tb/driver1/gen1/out
+add wave -position insertpoint  \
+sim:/Driver_tb/driver1/gen1/in
+restart
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# [time =0]Intialize the test bench
+# [time =40]Read time
+# Compile of Driver.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver
+# Loading work.Clock_divider
+# Warning in wave window restart: (vish-4014) No objects found matching '/Driver_tb/driver1/process_start'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/Driver_tb/driver1/process_start'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/Driver_tb/driver1/gen1/out'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/Driver_tb/driver1/gen1/in'. 
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# [time =0]Intialize the test bench
+# [time =40]Read time
+restart
+# Compile of Driver_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# [time =0]Intialize the test bench
+# [time =40]Read seconds
+# [time =2740]Read seconds complete
+# Compile of Driver_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# [time =0]Intialize the test bench
+# [time =40]Read seconds
+# [time =2740]Read seconds complete
+# WARNING: No extended dataflow license exists
+restart
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# [time =0]Intialize the test bench
+# [time =40]Read seconds
+# [time =2740]Read seconds complete
+# Compile of Driver_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# [time =0]Intialize the test bench
+# [time =40]Read seconds
+# [time =2740]Read seconds complete
+# Compile of Driver_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# [time =0]Intialize the test bench
+# [time =40]Read seconds
+# [time =2820]Read seconds complete
+# Compile of SPI.sv was successful.
+# Compile of SPI_tb.sv was successful.
+# Compile of Driver.sv was successful.
+# Compile of Driver_tb.sv was successful.
+# 4 compiles, 0 failed with no errors.
+quit
+exit
+finish
+# invalid command name "finish"
+stop
+quit -sim
+# End time: 16:31:14 on May 21,2022, Elapsed time: 1:10:55
+# Errors: 0, Warnings: 5
+vsim work.Driver_tb
+# vsim work.Driver_tb 
+# Start time: 16:31:18 on May 21,2022
+# Loading sv_std.std
+# Loading work.Driver_tb
+# Loading work.Driver
+# Loading work.SPI
+# ** Error: (vsim-3063) Port 'clk50' not found in the connected module (1st connection).
+#    Time: 0 ps  Iteration: 0  Instance: /Driver_tb/driver1 File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/Driver_tb.sv Line: 23
+# Error loading design
+# End time: 16:31:18 on May 21,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+# Compile of SPI.sv was successful.
+# Compile of SPI_tb.sv was successful.
+# Compile of Driver.sv was successful.
+# Compile of Driver_tb.sv was successful.
+# 4 compiles, 0 failed with no errors.
+# Compile of SPI.sv was successful.
+# Compile of SPI_tb.sv was successful.
+# Compile of Driver.sv was successful.
+# Compile of Driver_tb.sv was successful.
+# 4 compiles, 0 failed with no errors.
+vsim work.Driver_tb
+# vsim work.Driver_tb 
+# Start time: 16:31:56 on May 21,2022
+# Loading sv_std.std
+# Loading work.Driver_tb
+# Loading work.Driver
+# Loading work.SPI
+add wave -position insertpoint  \
+sim:/Driver_tb/CE \
+sim:/Driver_tb/clk2 \
+sim:/Driver_tb/dir_io \
+sim:/Driver_tb/gen_io \
+sim:/Driver_tb/IO \
+sim:/Driver_tb/Minutes \
+sim:/Driver_tb/read \
+sim:/Driver_tb/rstn \
+sim:/Driver_tb/SCLK \
+sim:/Driver_tb/Seconds \
+sim:/Driver_tb/write
+run
+# [time =0]Intialize the test bench
+# [time =40]Read seconds
+# [time =2820]Read seconds complete
+# [time =4260]Read Minutes complete
+add wave -position insertpoint  \
+sim:/Driver_tb/driver1/process_cnt
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# [time =0]Intialize the test bench
+# [time =40]Read seconds
+# [time =2820]Read seconds complete
+# [time =4260]Read Minutes complete
+# Compile of SPI.sv was successful.
+# Compile of SPI_tb.sv was successful.
+# Compile of Driver.sv was successful.
+# Compile of Driver_tb.sv was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver_tb
+# Loading work.Driver
+# Loading work.SPI
+run
+# [time =0]Intialize the test bench
+# [time =40]Read seconds
+# [time =1500]Read seconds complete
+# [time =2940]Read Minutes complete
+# Compile of SPI.sv was successful.
+# Compile of SPI_tb.sv was successful.
+# Compile of Driver.sv was successful.
+# Compile of Driver_tb.sv was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver_tb
+# Loading work.Driver
+# Loading work.SPI
+run
+# [time =0]Intialize the test bench
+# [time =40]Read seconds
+# [time =1500]Read seconds complete
+# [time =2160]Read Minutes complete
+# Compile of Driver_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver_tb
+run
+# [time =0]Intialize the test bench
+# [time =40]Read seconds
+# [time =1500]Read seconds complete
+# [time =1660]Read Minutes complete
+# [time =2300]Put simulated valued
+# Compile of Driver_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver_tb
+run
+# [time =0]Intialize the test bench
+# [time =40]Read seconds
+# [time =1500]Read seconds complete
+# [time =1660]Read Minutes
+# [time =2300]Put simulated valued
+# [time =2620]Read Minutes complete
+# Compile of Driver_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver_tb
+run
+# [time =0]Intialize the test bench
+# [time =40]Read seconds
+# [time =1500]Read seconds complete
+# [time =1660]Read Minutes
+# [time =2300]Put simulated valued
+# [time =2940]Read Minutes complete
+# Compile of Driver.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver
+run
+# [time =0]Intialize the test bench
+# [time =40]Read seconds
+# [time =1500]Read seconds complete
+# [time =1660]Read Minutes
+# [time =2300]Put simulated valued
+# [time =2940]Read Minutes complete
+# Compile of Driver.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver
+run
+# [time =0]Intialize the test bench
+# [time =40]Read seconds
+# [time =1500]Read seconds complete
+# [time =1660]Read Minutes
+# [time =2300]Put simulated valued
+# [time =2940]Read Minutes complete
+# Compile of Driver.sv was successful.
+# Compile of Driver_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver_tb
+# Loading work.Driver
+run
+# [time =0]Intialize the test bench
+# [time =40]Read seconds
+# [time =1500]Read seconds complete
+# [time =1660]Read Minutes
+# [time =2300]Put simulated valued
+# [time =2940]Read Minutes complete
+# [time =3140]Write default times
+# Compile of Driver.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver
+run
+# [time =0]Intialize the test bench
+# [time =40]Read seconds
+# [time =1500]Read seconds complete
+# [time =1660]Read Minutes
+# [time =2300]Put simulated valued
+# [time =2940]Read Minutes complete
+# [time =3140]Write default times
+# Compile of Driver.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver
+run
+# [time =0]Intialize the test bench
+# [time =40]Read seconds
+# [time =1500]Read seconds complete
+# [time =1660]Read Minutes
+# [time =2300]Put simulated valued
+# [time =2940]Read Minutes complete
+# [time =3140]Write default times
+# Compile of Driver_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver_tb
+run
+# [time =0]Intialize the test bench
+# [time =40]Read seconds
+# [time =1500]Read seconds complete
+# [time =1660]Read Minutes
+# [time =2300]Put simulated valued
+# [time =2940]Read Minutes complete
+# [time =3140]Write default times
+# [time =3300]Write seconds
+# [time =4580]Write minutes
+# [time =6020]Write hours
+add wave -position insertpoint  \
+sim:/Driver_tb/driver1/start
+restart
+run
+# [time =0]Intialize the test bench
+# [time =40]Read seconds
+# [time =1500]Read seconds complete
+# [time =1660]Read Minutes
+# [time =2300]Put simulated valued
+# [time =2940]Read Minutes complete
+# [time =3140]Write default times
+# [time =3300]Write seconds
+# [time =4580]Write minutes
+# [time =6020]Write hours
+# Compile of Driver.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver
+run
+# [time =0]Intialize the test bench
+# [time =40]Read seconds
+# [time =1500]Read seconds complete
+# [time =1660]Read Minutes
+# [time =2300]Put simulated valued
+# [time =2940]Read Minutes complete
+# [time =3140]Write default times
+# [time =3300]Write seconds
+# [time =4580]Write minutes
+# [time =6020]Write hours
+# Compile of Driver.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver
+run
+# [time =0]Intialize the test bench
+# [time =40]Read seconds
+# [time =1500]Read seconds complete
+# [time =1660]Read Minutes
+# [time =2300]Put simulated valued
+# [time =2940]Read Minutes complete
+# [time =3140]Write default times
+# [time =3300]Write seconds
+# [time =4580]Write minutes
+# [time =6020]Write hours
+# Compile of Driver_tb.sv failed with 1 errors.
+# Compile of Driver_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver_tb
+run
+# [time =0]Intialize the test bench
+# [time =40]Read seconds
+# [time =1500]Read seconds complete
+# [time =1660]Read Minutes
+# [time =2300]Put simulated valued
+# [time =2940]Read Minutes complete
+# [time =3140]Write default times
+# [time =3300]Write seconds
+# [time =4580]Write minutes
+# [time =6020]Write hours
+# [time =7500]Write process successfully
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/Driver_tb.sv(83)
+#    Time: 7600 ps  Iteration: 0  Instance: /Driver_tb
+# Break in Module Driver_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/Driver_tb.sv line 83
+# Compile of Driver_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver_tb
+run
+# [time =0]Intialize the test bench
+# [time =40]Read seconds
+# [time =1500]Read seconds complete
+# [time =1660]Read Minutes
+# [time =2300]Put simulated valued
+# [time =2940]Read Minutes complete
+# [time =3140]Write default times
+# [time =3300]Write seconds
+# [time =4580]Write minutes
+# [time =6020]Write hours
+# [time =7500]Write process successfully
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/Driver_tb.sv(84)
+#    Time: 7600 ps  Iteration: 0  Instance: /Driver_tb
+# Break in Module Driver_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/Driver_tb.sv line 84
+# Compile of Driver.sv was successful.
+# Compile of Driver_tb.sv failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of Driver_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver_tb
+# Loading work.Driver
+run
+# [time =0]Intialize the test bench
+# [time =40]Read seconds
+# [time =1500]Read seconds complete
+# [time =1660]Read Minutes
+# [time =2300]Put simulated valued
+# [time =2940]Read Minutes complete
+# [time =3140]Write default times
+# [time =3300]Write seconds
+# [time =4580]Write minutes
+# [time =6020]Write hours
+# [time =7500]Write process successfully
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/Driver_tb.sv(85)
+#    Time: 7600 ps  Iteration: 0  Instance: /Driver_tb
+# Break in Module Driver_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/Driver_tb.sv line 85
+# Compile of SPI.sv was successful.
+# Compile of SPI_tb.sv was successful.
+# Compile of Driver.sv was successful.
+# Compile of Driver_tb.sv was successful.
+# Compile of Clock_Divider.sv was successful.
+# Compile of Decoder.sv was successful.
+# Compile of Display_Seven.sv was successful.
+# Compile of TimeKeeper.sv was successful.
+# Compile of Display_Seven_tb.sv was successful.
+# Compile of TimeKeeper_tb.sv was successful.
+# 10 compiles, 0 failed with no errors.
+# Compile of TimeKeeper_tb.sv was successful.
+vsim work.TimeKeeper_tb
+# End time: 18:25:28 on May 21,2022, Elapsed time: 1:53:32
+# Errors: 0, Warnings: 5
+# vsim work.TimeKeeper_tb 
+# Start time: 18:25:28 on May 21,2022
+# Loading sv_std.std
+# Loading work.TimeKeeper_tb
+# Loading work.TimeKeeper
+# ** Warning: (vsim-3035) Instantiation depth of '/TimeKeeper_tb/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1' is 51. This might indicate a recursive instantiation. Increasing limit to 75.
+# ** Error: (vsim-3036) Instantiation depth of '/TimeKeeper_tb/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1' is 75. Assuming recursive instantiation.
+#    Time: 0 ps  Iteration: 0  Instance: /TimeKeeper_tb/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1/time1 File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv
+# Error loading design
+# End time: 18:25:29 on May 21,2022, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 2
+# Compile of SPI.sv was successful.
+# Compile of SPI_tb.sv was successful.
+# Compile of Driver.sv was successful.
+# Compile of Driver_tb.sv was successful.
+# Compile of Clock_Divider.sv was successful.
+# Compile of Decoder.sv was successful.
+# Compile of Display_Seven.sv was successful.
+# Compile of TimeKeeper.sv was successful.
+# Compile of Display_Seven_tb.sv was successful.
+# Compile of TimeKeeper_tb.sv was successful.
+# 10 compiles, 0 failed with no errors.
+vsim work.TimeKeeper_tb
+# vsim work.TimeKeeper_tb 
+# Start time: 18:26:59 on May 21,2022
+# Loading sv_std.std
+# Loading work.TimeKeeper_tb
+# Loading work.TimeKeeper
+# Loading work.Clock_divider
+# Loading work.Driver
+# Loading work.SPI
+# Loading work.Decoder
+# Loading work.Display_Seven
+add wave -position insertpoint  \
+sim:/TimeKeeper_tb/CE \
+sim:/TimeKeeper_tb/clk50 \
+sim:/TimeKeeper_tb/DATA_LENGTH \
+sim:/TimeKeeper_tb/dir_io \
+sim:/TimeKeeper_tb/gen_io \
+sim:/TimeKeeper_tb/IO \
+sim:/TimeKeeper_tb/LED0 \
+sim:/TimeKeeper_tb/LED1 \
+sim:/TimeKeeper_tb/LED2 \
+sim:/TimeKeeper_tb/LED3 \
+sim:/TimeKeeper_tb/read \
+sim:/TimeKeeper_tb/rstn \
+sim:/TimeKeeper_tb/SCLK \
+sim:/TimeKeeper_tb/SEVENSEGMENT_LENGTH \
+sim:/TimeKeeper_tb/UNITS_LENGTH \
+sim:/TimeKeeper_tb/write
+add wave -position insertpoint  \
+sim:/TimeKeeper_tb/CE \
+sim:/TimeKeeper_tb/clk50 \
+sim:/TimeKeeper_tb/DATA_LENGTH \
+sim:/TimeKeeper_tb/dir_io \
+sim:/TimeKeeper_tb/gen_io \
+sim:/TimeKeeper_tb/IO \
+sim:/TimeKeeper_tb/LED0 \
+sim:/TimeKeeper_tb/LED1 \
+sim:/TimeKeeper_tb/LED2 \
+sim:/TimeKeeper_tb/LED3 \
+sim:/TimeKeeper_tb/read \
+sim:/TimeKeeper_tb/rstn \
+sim:/TimeKeeper_tb/SCLK \
+sim:/TimeKeeper_tb/SEVENSEGMENT_LENGTH \
+sim:/TimeKeeper_tb/UNITS_LENGTH \
+sim:/TimeKeeper_tb/write
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# Compile of TimeKeeper_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.TimeKeeper_tb
+run
+# Compile of TimeKeeper_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.TimeKeeper_tb
+run
+# Compile of TimeKeeper_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.TimeKeeper_tb
+run
+# Compile of TimeKeeper_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.TimeKeeper_tb
+run
+# [time =0]Intialize the test bench
+# [time =100]Read times and write to the 7 Segment led
+# [time =21000]Simualate the seconds from DS1302
+# Compile of TimeKeeper_tb.sv failed with 3 errors.
+# Compile of TimeKeeper_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.TimeKeeper_tb
+run
+# [time =0]Intialize the test bench
+# [time =100]Read times and write to the 7 Segment led
+# [time =21000]Simualate the seconds from DS1302
+# [time =37000]Simualate the senconds complete
+# [time =37000]Wrong value
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv(87)
+#    Time: 37 ns  Iteration: 0  Instance: /TimeKeeper_tb
+# Break in Module TimeKeeper_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv line 87
+# Compile of TimeKeeper_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.TimeKeeper_tb
+run
+# [time =0]Intialize the test bench
+# [time =100]Read times and write to the 7 Segment led
+# [time =21000]Simualate the seconds from DS1302
+# [time =37000]Simualate the senconds complete
+# [time =37000]Wrong value
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv(89)
+#    Time: 38 ns  Iteration: 0  Instance: /TimeKeeper_tb
+# Break in Module TimeKeeper_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv line 89
+# Compile of TimeKeeper_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.TimeKeeper_tb
+run
+# [time =0]Intialize the test bench
+# [time =100]Read times and write to the 7 Segment led
+# [time =21000]Simualate the seconds from DS1302
+# [time =37000]Simualate the senconds complete
+# [time =37500]The seconds is 37s
+# Compile of TimeKeeper_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.TimeKeeper_tb
+run
+# [time =0]Intialize the test bench
+# [time =100]Read times and write to the 7 Segment led
+# [time =21000]Simualate the seconds from DS1302
+# [time =37000]Simualate the senconds complete
+# [time =37500]Wrong value
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv(90)
+#    Time: 38500 ps  Iteration: 0  Instance: /TimeKeeper_tb
+# Break in Module TimeKeeper_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv line 90
+# Compile of TimeKeeper_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.TimeKeeper_tb
+run
+# [time =0]Intialize the test bench
+# [time =100]Read times and write to the 7 Segment led
+# [time =21000]Simualate the seconds from DS1302
+# [time =37000]Simualate the senconds complete
+# [time =37500]The seconds is 37s
+# [time =40000]Simualate the minutes from DS1302
+# [time =74000]The minutes is 38s
+# Compile of TimeKeeper_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.TimeKeeper_tb
+run
+# [time =0]Intialize the test bench
+# [time =100]Read times and write to the 7 Segment led
+# [time =21000]Simualate the seconds from DS1302
+# [time =37000]Simualate the senconds complete
+# [time =37500]The seconds is 37s
+# [time =40000]Simualate the minutes from DS1302
+# [time =74000]The minutes is 38s
+# [time =77000]Write process
+# Compile of Driver_tb.sv was successful.
+# Compile of TimeKeeper_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.TimeKeeper_tb
+run
+# [time =0]Intialize the test bench
+# [time =100]Read times and write to the 7 Segment led
+# [time =21000]Simualate the seconds from DS1302
+# [time =37000]Simualate the senconds complete
+# [time =37500]The seconds is 37s
+# [time =40000]Simualate the minutes from DS1302
+# [time =74000]The minutes is 38s
+# [time =77000]Write process
+# [time =192000]Write process successfully
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv(119)
+#    Time: 197 ns  Iteration: 0  Instance: /TimeKeeper_tb
+# Break in Module TimeKeeper_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv line 119
+# Compile of SPI.sv was successful.
+# Compile of SPI_tb.sv was successful.
+# Compile of Driver.sv was successful.
+# Compile of Driver_tb.sv was successful.
+# Compile of Clock_Divider.sv was successful.
+# Compile of Decoder.sv was successful.
+# Compile of Display_Seven.sv was successful.
+# Compile of TimeKeeper.sv was successful.
+# Compile of Display_Seven_tb.sv was successful.
+# Compile of TimeKeeper_tb.sv was successful.
+# 10 compiles, 0 failed with no errors.
+# Compile of SPI.sv was successful.
+# Compile of SPI_tb.sv was successful.
+# Compile of Driver.sv was successful.
+# Compile of Driver_tb.sv was successful.
+# Compile of Clock_Divider.sv was successful.
+# Compile of Decoder.sv was successful.
+# Compile of Display_Seven.sv was successful.
+# Compile of TimeKeeper.sv was successful.
+# Compile of Display_Seven_tb.sv was successful.
+# Compile of TimeKeeper_tb.sv was successful.
+# 10 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.TimeKeeper_tb
+# Loading work.TimeKeeper
+# Loading work.Clock_divider
+# Loading work.Driver
+# Loading work.SPI
+# Loading work.Decoder
+# Loading work.Display_Seven
+run
+# [time =0]Intialize the test bench
+# [time =100]Read times and write to the 7 Segment led
+# [time =21000]Simualate the seconds from DS1302
+# [time =37000]Simualate the senconds complete
+# [time =37500]Wrong value
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv(90)
+#    Time: 38500 ps  Iteration: 0  Instance: /TimeKeeper_tb
+# Break in Module TimeKeeper_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv line 90
+# Compile of Driver.sv was successful.
+# Compile of Driver.sv was successful.
+# Compile of Driver.sv was successful.
+# Compile of Driver.sv was successful.
+# Compile of Driver.sv was successful.
+# Compile of Mux.sv was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of DeMux.sv was successful.
+# Compile of SPI.sv was successful.
+# Compile of SPI_tb.sv was successful.
+# Compile of Driver.sv was successful.
+# Compile of Driver_tb.sv was successful.
+# Compile of Clock_Divider.sv was successful.
+# Compile of Decoder.sv was successful.
+# Compile of Display_Seven.sv was successful.
+# Compile of TimeKeeper.sv was successful.
+# Compile of Display_Seven_tb.sv was successful.
+# Compile of TimeKeeper_tb.sv was successful.
+# Compile of DeMux.sv was successful.
+# 11 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.TimeKeeper_tb
+# Loading work.TimeKeeper
+# Loading work.Clock_divider
+# Loading work.Driver
+# Loading work.DeMux
+# Loading work.SPI
+# Loading work.Decoder
+# Loading work.Display_Seven
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'Port1'. The port definition is at: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/DeMux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /TimeKeeper_tb/time1/dri1/demux1 File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 46
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'Port2'. The port definition is at: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/DeMux.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /TimeKeeper_tb/time1/dri1/demux1 File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 46
+run
+# [time =0]Intialize the test bench
+# [time =100]Read times and write to the 7 Segment led
+# [time =21000]Simualate the seconds from DS1302
+# [time =37000]Simualate the senconds complete
+# [time =37500]Wrong value
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv(90)
+#    Time: 38500 ps  Iteration: 0  Instance: /TimeKeeper_tb
+# Break in Module TimeKeeper_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv line 90
+# Compile of TimeKeeper_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.TimeKeeper_tb
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'Port1'. The port definition is at: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/DeMux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /TimeKeeper_tb/time1/dri1/demux1 File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 46
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'Port2'. The port definition is at: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/DeMux.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /TimeKeeper_tb/time1/dri1/demux1 File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 46
+run
+# [time =0]Intialize the test bench
+# [time =100]Read times and write to the 7 Segment led
+# [time =21000]Simualate the seconds from DS1302
+# [time =37000]Simualate the senconds complete
+# [time =37500]Wrong value
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv(90)
+#    Time: 47500 ps  Iteration: 0  Instance: /TimeKeeper_tb
+# Break in Module TimeKeeper_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv line 90
+add wave -position insertpoint  \
+sim:/TimeKeeper_tb/time1/dri1/process_cnt
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'Port1'. The port definition is at: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/DeMux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /TimeKeeper_tb/time1/dri1/demux1 File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 46
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'Port2'. The port definition is at: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/DeMux.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /TimeKeeper_tb/time1/dri1/demux1 File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 46
+run
+# [time =0]Intialize the test bench
+# [time =100]Read times and write to the 7 Segment led
+# [time =21000]Simualate the seconds from DS1302
+# [time =37000]Simualate the senconds complete
+# [time =37500]Wrong value
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv(90)
+#    Time: 47500 ps  Iteration: 0  Instance: /TimeKeeper_tb
+# Break in Module TimeKeeper_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv line 90
+add wave -position insertpoint  \
+sim:/TimeKeeper_tb/time1/dri1/spi1/rd
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'Port1'. The port definition is at: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/DeMux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /TimeKeeper_tb/time1/dri1/demux1 File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 46
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'Port2'. The port definition is at: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/DeMux.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /TimeKeeper_tb/time1/dri1/demux1 File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 46
+run
+# [time =0]Intialize the test bench
+# [time =100]Read times and write to the 7 Segment led
+# [time =21000]Simualate the seconds from DS1302
+# [time =37000]Simualate the senconds complete
+# [time =37500]Wrong value
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv(90)
+#    Time: 47500 ps  Iteration: 0  Instance: /TimeKeeper_tb
+# Break in Module TimeKeeper_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv line 90
+add wave -position insertpoint  \
+sim:/TimeKeeper_tb/time1/dri1/demux1/Port1 \
+sim:/TimeKeeper_tb/time1/dri1/demux1/Port2 \
+sim:/TimeKeeper_tb/time1/dri1/demux1/PortIn \
+sim:/TimeKeeper_tb/time1/dri1/demux1/Sel
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'Port1'. The port definition is at: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/DeMux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /TimeKeeper_tb/time1/dri1/demux1 File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 46
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'Port2'. The port definition is at: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/DeMux.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /TimeKeeper_tb/time1/dri1/demux1 File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 46
+run
+# [time =0]Intialize the test bench
+# [time =100]Read times and write to the 7 Segment led
+# [time =21000]Simualate the seconds from DS1302
+# [time =37000]Simualate the senconds complete
+# [time =37500]Wrong value
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv(90)
+#    Time: 47500 ps  Iteration: 0  Instance: /TimeKeeper_tb
+# Break in Module TimeKeeper_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv line 90
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'Port1'. The port definition is at: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/DeMux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /TimeKeeper_tb/time1/dri1/demux1 File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 46
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'Port2'. The port definition is at: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/DeMux.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /TimeKeeper_tb/time1/dri1/demux1 File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 46
+run
+# [time =0]Intialize the test bench
+# [time =100]Read times and write to the 7 Segment led
+# [time =21000]Simualate the seconds from DS1302
+# [time =37000]Simualate the senconds complete
+# [time =37500]Wrong value
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv(90)
+#    Time: 47500 ps  Iteration: 0  Instance: /TimeKeeper_tb
+# Break in Module TimeKeeper_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv line 90
+add wave -position insertpoint  \
+sim:/TimeKeeper_tb/time1/dri1/Minutes
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'Port1'. The port definition is at: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/DeMux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /TimeKeeper_tb/time1/dri1/demux1 File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 46
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'Port2'. The port definition is at: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/DeMux.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /TimeKeeper_tb/time1/dri1/demux1 File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 46
+run
+# [time =0]Intialize the test bench
+# [time =100]Read times and write to the 7 Segment led
+# [time =21000]Simualate the seconds from DS1302
+# [time =37000]Simualate the senconds complete
+# [time =37500]Wrong value
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv(90)
+#    Time: 47500 ps  Iteration: 0  Instance: /TimeKeeper_tb
+# Break in Module TimeKeeper_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv line 90
+add wave -position insertpoint  \
+sim:/TimeKeeper_tb/time1/dri1/rd_1
+add wave -position insertpoint  \
+sim:/TimeKeeper_tb/time1/dri1/rd_2
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'Port1'. The port definition is at: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/DeMux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /TimeKeeper_tb/time1/dri1/demux1 File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 46
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'Port2'. The port definition is at: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/DeMux.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /TimeKeeper_tb/time1/dri1/demux1 File: C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/src/Driver.sv Line: 46
+run
+# [time =0]Intialize the test bench
+# [time =100]Read times and write to the 7 Segment led
+# [time =21000]Simualate the seconds from DS1302
+# [time =37000]Simualate the senconds complete
+# [time =37500]Wrong value
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv(90)
+#    Time: 47500 ps  Iteration: 0  Instance: /TimeKeeper_tb
+# Break in Module TimeKeeper_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv line 90
+# Compile of Driver.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver
+run
+# [time =0]Intialize the test bench
+# [time =100]Read times and write to the 7 Segment led
+# [time =21000]Simualate the seconds from DS1302
+# [time =37000]Simualate the senconds complete
+# [time =37500]The seconds is 37s
+# [time =40000]Simualate the minutes from DS1302
+# [time =74000]The minutes is 38s
+# [time =77000]Write process
+# [time =192000]Write process successfully
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv(119)
+#    Time: 197 ns  Iteration: 0  Instance: /TimeKeeper_tb
+# Break in Module TimeKeeper_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv line 119
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line
+# Compile of SPI.sv was successful.
+# Compile of SPI_tb.sv was successful.
+# Compile of Driver.sv was successful.
+# Compile of Driver_tb.sv was successful.
+# Compile of Clock_Divider.sv was successful.
+# Compile of Decoder.sv was successful.
+# Compile of Display_Seven.sv was successful.
+# Compile of TimeKeeper.sv was successful.
+# Compile of Display_Seven_tb.sv was successful.
+# Compile of TimeKeeper_tb.sv was successful.
+# Compile of DeMux.sv was successful.
+# 11 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.TimeKeeper_tb
+# Loading work.TimeKeeper
+# Loading work.Clock_divider
+# Loading work.Driver
+# Loading work.DeMux
+# Loading work.SPI
+# Loading work.Decoder
+# Loading work.Display_Seven
+run
+# [time =0]Intialize the test bench
+# [time =100]Read times and write to the 7 Segment led
+# [time =21000]Simualate the seconds from DS1302
+# [time =37000]Simualate the senconds complete
+# [time =37500]The seconds is 37s
+# [time =40000]Simualate the minutes from DS1302
+# [time =74000]The minutes is 38s
+# [time =77000]Write process
+# [time =192000]Write process successfully
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv(119)
+#    Time: 197 ns  Iteration: 0  Instance: /TimeKeeper_tb
+# Break in Module TimeKeeper_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv line 119
+# Compile of Driver.sv was successful.
+# Compile of Driver.sv was successful.
+# Compile of SPI.sv was successful.
+# Compile of SPI_tb.sv was successful.
+# Compile of Driver.sv was successful.
+# Compile of Driver_tb.sv was successful.
+# Compile of Clock_Divider.sv was successful.
+# Compile of Decoder.sv was successful.
+# Compile of Display_Seven.sv was successful.
+# Compile of TimeKeeper.sv was successful.
+# Compile of Display_Seven_tb.sv was successful.
+# Compile of TimeKeeper_tb.sv was successful.
+# Compile of DeMux.sv was successful.
+# 11 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.TimeKeeper_tb
+# Loading work.TimeKeeper
+# Loading work.Clock_divider
+# Loading work.Driver
+# Loading work.DeMux
+# Loading work.SPI
+# Loading work.Decoder
+# Loading work.Display_Seven
+run
+# [time =0]Intialize the test bench
+# [time =100]Read times and write to the 7 Segment led
+# [time =21000]Simualate the seconds from DS1302
+# [time =37000]Simualate the senconds complete
+# [time =37500]The seconds is 37s
+# [time =40000]Simualate the minutes from DS1302
+# [time =74000]The minutes is 38s
+# [time =77000]Write process
+# [time =192000]Write process successfully
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv(119)
+#    Time: 197 ns  Iteration: 0  Instance: /TimeKeeper_tb
+# Break in Module TimeKeeper_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv line 119
+# Compile of TimeKeeper_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.TimeKeeper_tb
+run
+# [time =0]Intialize the test bench
+# [time =100]Read times and write to the 7 Segment led
+# [time =21000]Simualate the seconds from DS1302
+# [time =37000]Simualate the senconds complete
+# [time =37500]The seconds is 37s
+# [time =40000]Simualate the minutes from DS1302
+# [time =74000]The minutes is 38s
+# [time =77000]Write process
+# [time =192000]Write process successfully
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv(118)
+#    Time: 192 ns  Iteration: 0  Instance: /TimeKeeper_tb
+# Break in Module TimeKeeper_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv line 118
+# Compile of Driver.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver
+run
+# [time =0]Intialize the test bench
+# [time =100]Read times and write to the 7 Segment led
+# [time =21000]Simualate the seconds from DS1302
+# [time =37000]Simualate the senconds complete
+# [time =37500]The seconds is 37s
+# [time =40000]Simualate the minutes from DS1302
+# [time =74000]The minutes is 38s
+# [time =77000]Write process
+# [time =192000]Write process successfully
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv(118)
+#    Time: 192 ns  Iteration: 0  Instance: /TimeKeeper_tb
+# Break in Module TimeKeeper_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv line 118
+restart
+run
+# [time =0]Intialize the test bench
+# [time =100]Read times and write to the 7 Segment led
+# [time =21000]Simualate the seconds from DS1302
+# [time =37000]Simualate the senconds complete
+# [time =37500]The seconds is 37s
+# [time =40000]Simualate the minutes from DS1302
+# [time =74000]The minutes is 38s
+# [time =77000]Write process
+# [time =192000]Write process successfully
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv(118)
+#    Time: 192 ns  Iteration: 0  Instance: /TimeKeeper_tb
+# Break in Module TimeKeeper_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv line 118
+# Compile of SPI.sv was successful.
+# Compile of SPI_tb.sv was successful.
+# Compile of Driver.sv was successful.
+# Compile of Driver_tb.sv was successful.
+# Compile of Clock_Divider.sv was successful.
+# Compile of Decoder.sv was successful.
+# Compile of Display_Seven.sv was successful.
+# Compile of TimeKeeper.sv was successful.
+# Compile of Display_Seven_tb.sv was successful.
+# Compile of TimeKeeper_tb.sv was successful.
+# Compile of DeMux.sv was successful.
+# 11 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.TimeKeeper_tb
+# Loading work.TimeKeeper
+# Loading work.Clock_divider
+# Loading work.Driver
+# Loading work.DeMux
+# Loading work.SPI
+# Loading work.Decoder
+# Loading work.Display_Seven
+run
+# [time =0]Intialize the test bench
+# [time =100]Read times and write to the 7 Segment led
+# [time =21000]Simualate the seconds from DS1302
+# [time =37000]Simualate the senconds complete
+# [time =37500]Wrong value
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv(90)
+#    Time: 38500 ps  Iteration: 0  Instance: /TimeKeeper_tb
+# Break in Module TimeKeeper_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv line 90
+# Compile of Driver.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver
+run
+# [time =0]Intialize the test bench
+# [time =100]Read times and write to the 7 Segment led
+# [time =21000]Simualate the seconds from DS1302
+# [time =37000]Simualate the senconds complete
+# [time =37500]The seconds is 37s
+# [time =40000]Simualate the minutes from DS1302
+# [time =74000]The minutes is 38s
+# [time =77000]Write process
+# [time =192000]Write process successfully
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv(118)
+#    Time: 192 ns  Iteration: 0  Instance: /TimeKeeper_tb
+# Break in Module TimeKeeper_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv line 118
+# Compile of SPI.sv was successful.
+# Compile of Driver.sv was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of SPI.sv was successful.
+# Compile of SPI_tb.sv was successful.
+# Compile of Driver.sv was successful.
+# Compile of Driver_tb.sv was successful.
+# Compile of Clock_Divider.sv was successful.
+# Compile of Decoder.sv was successful.
+# Compile of Display_Seven.sv was successful.
+# Compile of TimeKeeper.sv was successful.
+# Compile of Display_Seven_tb.sv was successful.
+# Compile of TimeKeeper_tb.sv was successful.
+# Compile of DeMux.sv was successful.
+# 11 compiles, 0 failed with no errors.
+# Compile of Driver.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.TimeKeeper_tb
+# Loading work.TimeKeeper
+# Loading work.Clock_divider
+# Loading work.Driver
+# Loading work.DeMux
+# Loading work.SPI
+# Loading work.Decoder
+# Loading work.Display_Seven
+run
+# [time =0]Intialize the test bench
+# [time =100]Read times and write to the 7 Segment led
+# [time =21000]Simualate the seconds from DS1302
+# [time =37000]Simualate the senconds complete
+# [time =37500]The seconds is 37s
+# [time =40000]Simualate the minutes from DS1302
+# [time =74000]The minutes is 38s
+# [time =77000]Write process
+# [time =192000]Write process successfully
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv(118)
+#    Time: 192 ns  Iteration: 0  Instance: /TimeKeeper_tb
+# Break in Module TimeKeeper_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv line 118
+# Compile of Driver.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver
+run
+# [time =0]Intialize the test bench
+# [time =100]Read times and write to the 7 Segment led
+# [time =21000]Simualate the seconds from DS1302
+# [time =37000]Simualate the senconds complete
+# [time =37500]The seconds is 37s
+# [time =40000]Simualate the minutes from DS1302
+# [time =74000]The minutes is 38s
+# [time =77000]Write process
+# [time =192000]Write process successfully
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv(118)
+#    Time: 192 ns  Iteration: 0  Instance: /TimeKeeper_tb
+# Break in Module TimeKeeper_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv line 118
+# Compile of SPI.sv was successful.
+# Compile of SPI_tb.sv was successful.
+# Compile of Driver.sv failed with 1 errors.
+# Compile of Driver_tb.sv was successful.
+# Compile of Clock_Divider.sv was successful.
+# Compile of Decoder.sv was successful.
+# Compile of Display_Seven.sv was successful.
+# Compile of TimeKeeper.sv was successful.
+# Compile of Display_Seven_tb.sv was successful.
+# Compile of TimeKeeper_tb.sv was successful.
+# Compile of DeMux.sv was successful.
+# 11 compiles, 1 failed with 1 error.
+# Compile of Driver.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.TimeKeeper_tb
+# Loading work.TimeKeeper
+# Loading work.Clock_divider
+# Loading work.Driver
+# Loading work.DeMux
+# Loading work.SPI
+# Loading work.Decoder
+# Loading work.Display_Seven
+run
+# [time =0]Intialize the test bench
+# [time =100]Read times and write to the 7 Segment led
+# [time =21000]Simualate the seconds from DS1302
+# [time =37000]Simualate the senconds complete
+# [time =37500]Wrong value
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv(90)
+#    Time: 38500 ps  Iteration: 0  Instance: /TimeKeeper_tb
+# Break in Module TimeKeeper_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv line 90
+# Compile of Driver.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver
+run
+# [time =0]Intialize the test bench
+# [time =100]Read times and write to the 7 Segment led
+# [time =21000]Simualate the seconds from DS1302
+# [time =37000]Simualate the senconds complete
+# [time =37500]Wrong value
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv(90)
+#    Time: 38500 ps  Iteration: 0  Instance: /TimeKeeper_tb
+# Break in Module TimeKeeper_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv line 90
+# Compile of Driver.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver
+run
+# [time =0]Intialize the test bench
+# [time =100]Read times and write to the 7 Segment led
+# [time =21000]Simualate the seconds from DS1302
+# [time =37000]Simualate the senconds complete
+# [time =37500]The seconds is 37s
+# [time =40000]Simualate the minutes from DS1302
+# [time =74000]The minutes is 38s
+# [time =77000]Write process
+# [time =192000]Write process successfully
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv(118)
+#    Time: 192 ns  Iteration: 0  Instance: /TimeKeeper_tb
+# Break in Module TimeKeeper_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv line 118
+# Compile of Driver.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver
+run
+# [time =0]Intialize the test bench
+# [time =100]Read times and write to the 7 Segment led
+# [time =21000]Simualate the seconds from DS1302
+# [time =37000]Simualate the senconds complete
+# [time =37500]The seconds is 37s
+# [time =40000]Simualate the minutes from DS1302
+# [time =74000]The minutes is 38s
+# [time =77000]Write process
+# [time =192000]Write process successfully
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv(118)
+#    Time: 192 ns  Iteration: 0  Instance: /TimeKeeper_tb
+# Break in Module TimeKeeper_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv line 118
+# Compile of Driver.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver
+# Compile of Driver.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver
+run
+# [time =0]Intialize the test bench
+# [time =100]Read times and write to the 7 Segment led
+# [time =21000]Simualate the seconds from DS1302
+# [time =37000]Simualate the senconds complete
+# [time =37500]Wrong value
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv(90)
+#    Time: 38500 ps  Iteration: 0  Instance: /TimeKeeper_tb
+# Break in Module TimeKeeper_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv line 90
+# Compile of TimeKeeper_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.TimeKeeper_tb
+run
+# [time =0]Intialize the test bench
+# [time =300]Read times and write to the 7 Segment led
+# [time =21200]Simualate the seconds from DS1302
+# [time =37200]Simualate the senconds complete
+# [time =37700]The seconds is 37s
+# [time =40200]Simualate the minutes from DS1302
+# [time =74200]The minutes is 38s
+# [time =77200]Write process
+# [time =192200]Write process successfully
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv(122)
+#    Time: 192200 ps  Iteration: 0  Instance: /TimeKeeper_tb
+# Break in Module TimeKeeper_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv line 122
+# Compile of SPI.sv was successful.
+# Compile of Driver.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver
+# Loading work.SPI
+run
+# [time =0]Intialize the test bench
+# [time =300]Read times and write to the 7 Segment led
+# [time =21200]Simualate the seconds from DS1302
+# [time =37200]Simualate the senconds complete
+# [time =37700]The seconds is 37s
+# [time =40200]Simualate the minutes from DS1302
+# [time =74200]The minutes is 38s
+# [time =77200]Write process
+# [time =192200]Write process successfully
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv(122)
+#    Time: 192200 ps  Iteration: 0  Instance: /TimeKeeper_tb
+# Break in Module TimeKeeper_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv line 122
+# Compile of SPI.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SPI
+run
+# [time =0]Intialize the test bench
+# [time =300]Read times and write to the 7 Segment led
+# [time =21200]Simualate the seconds from DS1302
+# [time =37200]Simualate the senconds complete
+# [time =37700]The seconds is 37s
+# [time =40200]Simualate the minutes from DS1302
+# [time =74200]The minutes is 38s
+# [time =77200]Write process
+# [time =192200]Write process successfully
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv(122)
+#    Time: 192200 ps  Iteration: 0  Instance: /TimeKeeper_tb
+# Break in Module TimeKeeper_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv line 122
+# Compile of Driver.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver
+run
+# [time =0]Intialize the test bench
+# [time =300]Read times and write to the 7 Segment led
+# [time =21200]Simualate the seconds from DS1302
+# [time =37200]Simualate the senconds complete
+# [time =37700]The seconds is 37s
+# [time =40200]Simualate the minutes from DS1302
+# [time =74200]The minutes is 38s
+# [time =77200]Write process
+# [time =192200]Write process successfully
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv(122)
+#    Time: 192200 ps  Iteration: 0  Instance: /TimeKeeper_tb
+# Break in Module TimeKeeper_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv line 122
+# Compile of Driver.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver
+run
+# [time =0]Intialize the test bench
+# [time =300]Read times and write to the 7 Segment led
+# [time =21200]Simualate the seconds from DS1302
+# [time =37200]Simualate the senconds complete
+# [time =37700]The seconds is 37s
+# [time =40200]Simualate the minutes from DS1302
+# [time =74200]The minutes is 38s
+# [time =77200]Write process
+# [time =192200]Write process successfully
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv(122)
+#    Time: 192200 ps  Iteration: 0  Instance: /TimeKeeper_tb
+# Break in Module TimeKeeper_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv line 122
+add wave -position insertpoint  \
+sim:/TimeKeeper_tb/time1/dri1/finish_process
+restart
+run
+# [time =0]Intialize the test bench
+# [time =300]Read times and write to the 7 Segment led
+# [time =21200]Simualate the seconds from DS1302
+# [time =37200]Simualate the senconds complete
+# [time =37700]The seconds is 37s
+# [time =40200]Simualate the minutes from DS1302
+# [time =74200]The minutes is 38s
+# [time =77200]Write process
+# [time =192200]Write process successfully
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv(122)
+#    Time: 192200 ps  Iteration: 0  Instance: /TimeKeeper_tb
+# Break in Module TimeKeeper_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv line 122
+# Compile of Driver.sv failed with 3 errors.
+# Compile of Driver.sv failed with 2 errors.
+# Compile of Driver.sv failed with 2 errors.
+# Compile of Driver.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver
+run
+# [time =0]Intialize the test bench
+# [time =300]Read times and write to the 7 Segment led
+# [time =21200]Simualate the seconds from DS1302
+# [time =37200]Simualate the senconds complete
+# [time =37700]Wrong value
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv(94)
+#    Time: 38700 ps  Iteration: 0  Instance: /TimeKeeper_tb
+# Break in Module TimeKeeper_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv line 94
+# Compile of Driver.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver
+run
+# [time =0]Intialize the test bench
+# [time =300]Read times and write to the 7 Segment led
+# [time =21200]Simualate the seconds from DS1302
+# [time =37200]Simualate the senconds complete
+# [time =37700]Wrong value
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv(94)
+#    Time: 38700 ps  Iteration: 0  Instance: /TimeKeeper_tb
+# Break in Module TimeKeeper_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv line 94
+# Compile of TimeKeeper_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.TimeKeeper_tb
+run
+# [time =0]Intialize the test bench
+# [time =300]Read times and write to the 7 Segment led
+# [time =21200]Simualate the seconds from DS1302
+# [time =37200]Simualate the senconds complete
+# [time =38700]The seconds is 37s
+# [time =41200]Simualate the minutes from DS1302
+# [time =75200]The minutes is 38s
+# [time =78200]Write process
+# [time =193200]Write process successfully
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv(122)
+#    Time: 193200 ps  Iteration: 0  Instance: /TimeKeeper_tb
+# Break in Module TimeKeeper_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv line 122
+# Compile of Driver.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver
+run
+# [time =0]Intialize the test bench
+# [time =300]Read times and write to the 7 Segment led
+# [time =21200]Simualate the seconds from DS1302
+# [time =37200]Simualate the senconds complete
+# [time =38700]The seconds is 37s
+# [time =41200]Simualate the minutes from DS1302
+# [time =75200]The minutes is 38s
+# [time =78200]Write process
+# [time =193200]Write process successfully
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv(122)
+#    Time: 193200 ps  Iteration: 0  Instance: /TimeKeeper_tb
+# Break in Module TimeKeeper_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv line 122
+# Compile of Driver.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver
+run
+# [time =0]Intialize the test bench
+# [time =300]Read times and write to the 7 Segment led
+# [time =21200]Simualate the seconds from DS1302
+# [time =37200]Simualate the senconds complete
+# [time =38700]The seconds is 37s
+# [time =41200]Simualate the minutes from DS1302
+# [time =75200]The minutes is 38s
+# [time =78200]Write process
+# [time =193200]Write process successfully
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv(122)
+#    Time: 193200 ps  Iteration: 0  Instance: /TimeKeeper_tb
+# Break in Module TimeKeeper_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv line 122
+# Compile of Driver.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver
+run
+# [time =0]Intialize the test bench
+# [time =300]Read times and write to the 7 Segment led
+# [time =21200]Simualate the seconds from DS1302
+# [time =37200]Simualate the senconds complete
+# [time =38700]The seconds is 37s
+# [time =41200]Simualate the minutes from DS1302
+# [time =75200]The minutes is 38s
+# [time =78200]Write process
+# [time =193200]Write process successfully
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv(122)
+#    Time: 193200 ps  Iteration: 0  Instance: /TimeKeeper_tb
+# Break in Module TimeKeeper_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv line 122
+# Compile of Driver.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Driver
+run
+# [time =0]Intialize the test bench
+# [time =300]Read times and write to the 7 Segment led
+# [time =21200]Simualate the seconds from DS1302
+# [time =37200]Simualate the senconds complete
+# [time =38700]The seconds is 37s
+# [time =41200]Simualate the minutes from DS1302
+# [time =75200]The minutes is 38s
+# [time =78200]Write process
+# [time =193200]Write process successfully
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv(122)
+#    Time: 193200 ps  Iteration: 0  Instance: /TimeKeeper_tb
+# Break in Module TimeKeeper_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv line 122
+restart
+run
+# [time =0]Intialize the test bench
+# [time =300]Read times and write to the 7 Segment led
+# [time =21200]Simualate the seconds from DS1302
+# [time =37200]Simualate the senconds complete
+# [time =38700]The seconds is 37s
+# [time =41200]Simualate the minutes from DS1302
+# [time =75200]The minutes is 38s
+# [time =78200]Write process
+# [time =193200]Write process successfully
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv(122)
+#    Time: 193200 ps  Iteration: 0  Instance: /TimeKeeper_tb
+# Break in Module TimeKeeper_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv line 12# Compile of SPI.sv was successful.
+# Compile of SPI_tb.sv was successful.
+# Compile of Driver.sv was successful.
+# Compile of Display_Seven.sv was successful.
+# Compile of TimeKeeper_tb.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.TimeKeeper_tb
+# Loading work.Driver
+# Loading work.SPI
+# Loading work.Display_Seven
+run
+# [time =0]Intialize the test bench
+# [time =300]Read times and write to the 7 Segment led
+# [time =21200]Simualate the seconds from DS1302
+# [time =37200]Simualate the senconds complete
+# [time =38700]The seconds is 37s
+# [time =41200]Simualate the minutes from DS1302
+# [time =75200]The minutes is 38s
+# [time =78200]Write process
+# [time =193200]Write process successfully
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv(122)
+#    Time: 193200 ps  Iteration: 0  Instance: /TimeKeeper_tb
+# Break in Module TimeKeeper_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv line 122
+# End time: 16:29:49 on May 22,2022, Elapsed time: 22:02:50
+# Errors: 0, Warnings: 1

@@ -49,6 +49,9 @@ initial begin
     lap_reset = 1'b0;
     #40
     lap_reset = 1'b1;
+    #100
+    $display("[time =%0t]Finish test bench", $time);
+    $stop;
 
 end
 

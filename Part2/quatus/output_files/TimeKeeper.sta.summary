@@ -1,0 +1,277 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'Driver:dri1|SPI:spi1|rfinish'
+Slack : -5.337
+TNS   : -50.541
+
+Type  : Slow 1100mV 85C Model Setup 'Driver:dri1|process_cnt.00000000_899'
+Slack : -4.065
+TNS   : -75.631
+
+Type  : Slow 1100mV 85C Model Setup 'Clock_divider:clkdiv1|clock_out'
+Slack : -3.370
+TNS   : -53.339
+
+Type  : Slow 1100mV 85C Model Setup 'clk50'
+Slack : -2.634
+TNS   : -107.984
+
+Type  : Slow 1100mV 85C Model Setup 'Driver:dri1|sel'
+Slack : -2.204
+TNS   : -28.922
+
+Type  : Slow 1100mV 85C Model Hold 'clk50'
+Slack : 0.377
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'Clock_divider:clkdiv1|clock_out'
+Slack : 0.388
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'Driver:dri1|SPI:spi1|rfinish'
+Slack : 0.483
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'Driver:dri1|sel'
+Slack : 0.538
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'Driver:dri1|process_cnt.00000000_899'
+Slack : 0.682
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'Clock_divider:clkdiv1|clock_out'
+Slack : -1.810
+TNS   : -20.311
+
+Type  : Slow 1100mV 85C Model Removal 'Clock_divider:clkdiv1|clock_out'
+Slack : 0.952
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk50'
+Slack : -0.412
+TNS   : -22.553
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Clock_divider:clkdiv1|clock_out'
+Slack : -0.394
+TNS   : -15.967
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Driver:dri1|SPI:spi1|rfinish'
+Slack : 0.120
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Driver:dri1|process_cnt.00000000_899'
+Slack : 0.136
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Driver:dri1|sel'
+Slack : 0.323
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'Driver:dri1|SPI:spi1|rfinish'
+Slack : -5.231
+TNS   : -49.426
+
+Type  : Slow 1100mV 0C Model Setup 'Driver:dri1|process_cnt.00000000_899'
+Slack : -3.943
+TNS   : -74.032
+
+Type  : Slow 1100mV 0C Model Setup 'Clock_divider:clkdiv1|clock_out'
+Slack : -3.315
+TNS   : -53.369
+
+Type  : Slow 1100mV 0C Model Setup 'clk50'
+Slack : -2.591
+TNS   : -106.668
+
+Type  : Slow 1100mV 0C Model Setup 'Driver:dri1|sel'
+Slack : -2.101
+TNS   : -27.464
+
+Type  : Slow 1100mV 0C Model Hold 'Clock_divider:clkdiv1|clock_out'
+Slack : 0.365
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'Driver:dri1|SPI:spi1|rfinish'
+Slack : 0.376
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'clk50'
+Slack : 0.376
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'Driver:dri1|sel'
+Slack : 0.413
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'Driver:dri1|process_cnt.00000000_899'
+Slack : 0.472
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'Clock_divider:clkdiv1|clock_out'
+Slack : -1.890
+TNS   : -20.466
+
+Type  : Slow 1100mV 0C Model Removal 'Clock_divider:clkdiv1|clock_out'
+Slack : 0.937
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk50'
+Slack : -0.419
+TNS   : -24.520
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Clock_divider:clkdiv1|clock_out'
+Slack : -0.394
+TNS   : -15.728
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Driver:dri1|SPI:spi1|rfinish'
+Slack : 0.151
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Driver:dri1|process_cnt.00000000_899'
+Slack : 0.158
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Driver:dri1|sel'
+Slack : 0.318
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'Driver:dri1|SPI:spi1|rfinish'
+Slack : -3.283
+TNS   : -27.810
+
+Type  : Fast 1100mV 85C Model Setup 'Driver:dri1|process_cnt.00000000_899'
+Slack : -2.350
+TNS   : -37.698
+
+Type  : Fast 1100mV 85C Model Setup 'Clock_divider:clkdiv1|clock_out'
+Slack : -1.823
+TNS   : -25.243
+
+Type  : Fast 1100mV 85C Model Setup 'clk50'
+Slack : -1.209
+TNS   : -48.683
+
+Type  : Fast 1100mV 85C Model Setup 'Driver:dri1|sel'
+Slack : -1.079
+TNS   : -11.540
+
+Type  : Fast 1100mV 85C Model Hold 'Clock_divider:clkdiv1|clock_out'
+Slack : 0.091
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'clk50'
+Slack : 0.199
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'Driver:dri1|sel'
+Slack : 0.241
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'Driver:dri1|process_cnt.00000000_899'
+Slack : 0.428
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'Driver:dri1|SPI:spi1|rfinish'
+Slack : 0.450
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'Clock_divider:clkdiv1|clock_out'
+Slack : -0.794
+TNS   : -7.076
+
+Type  : Fast 1100mV 85C Model Removal 'Clock_divider:clkdiv1|clock_out'
+Slack : 0.385
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk50'
+Slack : -0.408
+TNS   : -4.192
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Clock_divider:clkdiv1|clock_out'
+Slack : -0.096
+TNS   : -1.725
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Driver:dri1|SPI:spi1|rfinish'
+Slack : 0.204
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Driver:dri1|process_cnt.00000000_899'
+Slack : 0.328
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Driver:dri1|sel'
+Slack : 0.343
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'Driver:dri1|SPI:spi1|rfinish'
+Slack : -2.889
+TNS   : -23.582
+
+Type  : Fast 1100mV 0C Model Setup 'Driver:dri1|process_cnt.00000000_899'
+Slack : -1.968
+TNS   : -31.858
+
+Type  : Fast 1100mV 0C Model Setup 'Clock_divider:clkdiv1|clock_out'
+Slack : -1.604
+TNS   : -22.171
+
+Type  : Fast 1100mV 0C Model Setup 'clk50'
+Slack : -1.018
+TNS   : -40.981
+
+Type  : Fast 1100mV 0C Model Setup 'Driver:dri1|sel'
+Slack : -0.944
+TNS   : -9.720
+
+Type  : Fast 1100mV 0C Model Hold 'Clock_divider:clkdiv1|clock_out'
+Slack : 0.022
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'Driver:dri1|sel'
+Slack : 0.174
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'clk50'
+Slack : 0.190
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'Driver:dri1|process_cnt.00000000_899'
+Slack : 0.328
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'Driver:dri1|SPI:spi1|rfinish'
+Slack : 0.428
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'Clock_divider:clkdiv1|clock_out'
+Slack : -0.741
+TNS   : -5.764
+
+Type  : Fast 1100mV 0C Model Removal 'Clock_divider:clkdiv1|clock_out'
+Slack : 0.339
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk50'
+Slack : -0.412
+TNS   : -4.108
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Clock_divider:clkdiv1|clock_out'
+Slack : -0.045
+TNS   : -0.705
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Driver:dri1|SPI:spi1|rfinish'
+Slack : 0.261
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Driver:dri1|process_cnt.00000000_899'
+Slack : 0.337
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Driver:dri1|sel'
+Slack : 0.366
+TNS   : 0.000
+
+------------------------------------------------------------

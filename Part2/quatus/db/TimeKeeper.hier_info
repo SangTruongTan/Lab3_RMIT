@@ -1,0 +1,299 @@
+|TimeKeeper
+read => read.IN1
+write => write.IN1
+rstn => rstn.IN1
+clk50 => clk50.IN1
+CE << Driver:dri1.CE
+IO <> Driver:dri1.IO
+SCLK << Driver:dri1.SCLK
+LED3[0] << Display_Seven:led3.Out
+LED3[1] << Display_Seven:led3.Out
+LED3[2] << Display_Seven:led3.Out
+LED3[3] << Display_Seven:led3.Out
+LED3[4] << Display_Seven:led3.Out
+LED3[5] << Display_Seven:led3.Out
+LED3[6] << Display_Seven:led3.Out
+LED2[0] << Display_Seven:led2.Out
+LED2[1] << Display_Seven:led2.Out
+LED2[2] << Display_Seven:led2.Out
+LED2[3] << Display_Seven:led2.Out
+LED2[4] << Display_Seven:led2.Out
+LED2[5] << Display_Seven:led2.Out
+LED2[6] << Display_Seven:led2.Out
+LED1[0] << Display_Seven:led1.Out
+LED1[1] << Display_Seven:led1.Out
+LED1[2] << Display_Seven:led1.Out
+LED1[3] << Display_Seven:led1.Out
+LED1[4] << Display_Seven:led1.Out
+LED1[5] << Display_Seven:led1.Out
+LED1[6] << Display_Seven:led1.Out
+LED0[0] << Display_Seven:led0.Out
+LED0[1] << Display_Seven:led0.Out
+LED0[2] << Display_Seven:led0.Out
+LED0[3] << Display_Seven:led0.Out
+LED0[4] << Display_Seven:led0.Out
+LED0[5] << Display_Seven:led0.Out
+LED0[6] << Display_Seven:led0.Out
+
+
+|TimeKeeper|Clock_divider:clkdiv1
+clock_in => clock_out~reg0.CLK
+clock_in => counter[0].CLK
+clock_in => counter[1].CLK
+clock_in => counter[2].CLK
+clock_in => counter[3].CLK
+clock_in => counter[4].CLK
+clock_in => counter[5].CLK
+clock_in => counter[6].CLK
+clock_in => counter[7].CLK
+clock_in => counter[8].CLK
+clock_in => counter[9].CLK
+clock_in => counter[10].CLK
+clock_in => counter[11].CLK
+clock_in => counter[12].CLK
+clock_in => counter[13].CLK
+clock_in => counter[14].CLK
+clock_in => counter[15].CLK
+clock_in => counter[16].CLK
+clock_in => counter[17].CLK
+clock_in => counter[18].CLK
+clock_in => counter[19].CLK
+clock_in => counter[20].CLK
+clock_in => counter[21].CLK
+clock_in => counter[22].CLK
+clock_in => counter[23].CLK
+clock_in => counter[24].CLK
+clock_in => counter[25].CLK
+clock_in => counter[26].CLK
+clock_in => counter[27].CLK
+clock_out <= clock_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TimeKeeper|Driver:dri1
+clk2 => clk2.IN1
+read => read_process.OUTPUTSELECT
+read => write_process.OUTPUTSELECT
+write => write_process.OUTPUTSELECT
+rstn => rstn.IN1
+CE <= SPI:spi1.ce
+IO <> SPI:spi1.io
+SCLK <= SPI:spi1.sclk
+Minutes[0] <= Minutes[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Minutes[1] <= Minutes[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Minutes[2] <= Minutes[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Minutes[3] <= Minutes[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Minutes[4] <= Minutes[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Minutes[5] <= Minutes[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Minutes[6] <= Minutes[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Minutes[7] <= Minutes[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Seconds[0] <= Seconds[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Seconds[1] <= Seconds[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Seconds[2] <= Seconds[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Seconds[3] <= Seconds[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Seconds[4] <= Seconds[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Seconds[5] <= Seconds[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Seconds[6] <= Seconds[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Seconds[7] <= Seconds[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TimeKeeper|Driver:dri1|DeMux:demux1
+Port1[0] <= Port1[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Port1[1] <= Port1[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Port1[2] <= Port1[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Port1[3] <= Port1[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Port1[4] <= Port1[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Port1[5] <= Port1[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Port1[6] <= Port1[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Port1[7] <= Port1[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Port2[0] <= Port2[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Port2[1] <= Port2[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Port2[2] <= Port2[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Port2[3] <= Port2[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Port2[4] <= Port2[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Port2[5] <= Port2[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Port2[6] <= Port2[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Port2[7] <= Port2[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+PortIn[0] => Port2[0]$latch.DATAIN
+PortIn[0] => Port1[0]$latch.DATAIN
+PortIn[1] => Port2[1]$latch.DATAIN
+PortIn[1] => Port1[1]$latch.DATAIN
+PortIn[2] => Port2[2]$latch.DATAIN
+PortIn[2] => Port1[2]$latch.DATAIN
+PortIn[3] => Port2[3]$latch.DATAIN
+PortIn[3] => Port1[3]$latch.DATAIN
+PortIn[4] => Port2[4]$latch.DATAIN
+PortIn[4] => Port1[4]$latch.DATAIN
+PortIn[5] => Port2[5]$latch.DATAIN
+PortIn[5] => Port1[5]$latch.DATAIN
+PortIn[6] => Port2[6]$latch.DATAIN
+PortIn[6] => Port1[6]$latch.DATAIN
+PortIn[7] => Port2[7]$latch.DATAIN
+PortIn[7] => Port1[7]$latch.DATAIN
+Sel => Port2[0]$latch.LATCH_ENABLE
+Sel => Port2[1]$latch.LATCH_ENABLE
+Sel => Port2[2]$latch.LATCH_ENABLE
+Sel => Port2[3]$latch.LATCH_ENABLE
+Sel => Port2[4]$latch.LATCH_ENABLE
+Sel => Port2[5]$latch.LATCH_ENABLE
+Sel => Port2[6]$latch.LATCH_ENABLE
+Sel => Port2[7]$latch.LATCH_ENABLE
+Sel => Port1[0]$latch.LATCH_ENABLE
+Sel => Port1[1]$latch.LATCH_ENABLE
+Sel => Port1[2]$latch.LATCH_ENABLE
+Sel => Port1[3]$latch.LATCH_ENABLE
+Sel => Port1[4]$latch.LATCH_ENABLE
+Sel => Port1[5]$latch.LATCH_ENABLE
+Sel => Port1[6]$latch.LATCH_ENABLE
+Sel => Port1[7]$latch.LATCH_ENABLE
+
+
+|TimeKeeper|Driver:dri1|SPI:spi1
+clk => io_dir.CLK
+clk => rrd[0].CLK
+clk => rrd[1].CLK
+clk => rrd[2].CLK
+clk => rrd[3].CLK
+clk => rrd[4].CLK
+clk => rrd[5].CLK
+clk => rrd[6].CLK
+clk => rrd[7].CLK
+clk => rfinish.CLK
+clk => rce.CLK
+clk => rsclk.CLK
+clk => rio.CLK
+clk => cnt[0].CLK
+clk => cnt[1].CLK
+clk => cnt[2].CLK
+clk => cnt[3].CLK
+clk => cnt[4].CLK
+clk => cnt[5].CLK
+wr_addr[0] => Mux0.IN7
+wr_addr[1] => Mux0.IN6
+wr_addr[2] => Mux0.IN5
+wr_addr[3] => Mux0.IN4
+wr_addr[4] => Mux0.IN3
+wr_addr[5] => Mux0.IN2
+wr_addr[6] => Mux0.IN1
+wr_addr[7] => Mux0.IN0
+wr_data[0] => rio.DATAB
+wr_data[0] => Mux1.IN7
+wr_data[1] => Mux1.IN6
+wr_data[2] => Mux1.IN5
+wr_data[3] => Mux1.IN4
+wr_data[4] => Mux1.IN3
+wr_data[5] => Mux1.IN2
+wr_data[6] => Mux1.IN1
+wr_data[7] => Mux1.IN0
+dir[0] => WideOr0.IN0
+dir[1] => WideOr0.IN1
+dir[1] => rio.OUTPUTSELECT
+dir[1] => Selector9.IN4
+dir[1] => Selector1.IN17
+dir[1] => Selector0.IN3
+start_rw => always0.IN0
+io <> io
+ce <= rce.DB_MAX_OUTPUT_PORT_TYPE
+sclk <= rsclk.DB_MAX_OUTPUT_PORT_TYPE
+rd[0] <= rrd[0].DB_MAX_OUTPUT_PORT_TYPE
+rd[1] <= rrd[1].DB_MAX_OUTPUT_PORT_TYPE
+rd[2] <= rrd[2].DB_MAX_OUTPUT_PORT_TYPE
+rd[3] <= rrd[3].DB_MAX_OUTPUT_PORT_TYPE
+rd[4] <= rrd[4].DB_MAX_OUTPUT_PORT_TYPE
+rd[5] <= rrd[5].DB_MAX_OUTPUT_PORT_TYPE
+rd[6] <= rrd[6].DB_MAX_OUTPUT_PORT_TYPE
+rd[7] <= rrd[7].DB_MAX_OUTPUT_PORT_TYPE
+finish <= rfinish.DB_MAX_OUTPUT_PORT_TYPE
+reset => always0.IN1
+
+
+|TimeKeeper|Decoder:dec1
+Minutes[0] => Min_down[0].DATAIN
+Minutes[1] => Min_down[1].DATAIN
+Minutes[2] => Min_down[2].DATAIN
+Minutes[3] => Min_down[3].DATAIN
+Minutes[4] => Min_up[0].DATAIN
+Minutes[5] => Min_up[1].DATAIN
+Minutes[6] => Min_up[2].DATAIN
+Minutes[7] => Min_up[3].DATAIN
+Seconds[0] => Sec_down[0].DATAIN
+Seconds[1] => Sec_down[1].DATAIN
+Seconds[2] => Sec_down[2].DATAIN
+Seconds[3] => Sec_down[3].DATAIN
+Seconds[4] => Sec_up[0].DATAIN
+Seconds[5] => Sec_up[1].DATAIN
+Seconds[6] => Sec_up[2].DATAIN
+Seconds[7] => Sec_up[3].DATAIN
+Min_up[0] <= Minutes[4].DB_MAX_OUTPUT_PORT_TYPE
+Min_up[1] <= Minutes[5].DB_MAX_OUTPUT_PORT_TYPE
+Min_up[2] <= Minutes[6].DB_MAX_OUTPUT_PORT_TYPE
+Min_up[3] <= Minutes[7].DB_MAX_OUTPUT_PORT_TYPE
+Min_down[0] <= Minutes[0].DB_MAX_OUTPUT_PORT_TYPE
+Min_down[1] <= Minutes[1].DB_MAX_OUTPUT_PORT_TYPE
+Min_down[2] <= Minutes[2].DB_MAX_OUTPUT_PORT_TYPE
+Min_down[3] <= Minutes[3].DB_MAX_OUTPUT_PORT_TYPE
+Sec_up[0] <= Seconds[4].DB_MAX_OUTPUT_PORT_TYPE
+Sec_up[1] <= Seconds[5].DB_MAX_OUTPUT_PORT_TYPE
+Sec_up[2] <= Seconds[6].DB_MAX_OUTPUT_PORT_TYPE
+Sec_up[3] <= Seconds[7].DB_MAX_OUTPUT_PORT_TYPE
+Sec_down[0] <= Seconds[0].DB_MAX_OUTPUT_PORT_TYPE
+Sec_down[1] <= Seconds[1].DB_MAX_OUTPUT_PORT_TYPE
+Sec_down[2] <= Seconds[2].DB_MAX_OUTPUT_PORT_TYPE
+Sec_down[3] <= Seconds[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TimeKeeper|Display_Seven:led3
+In[0] => Decoder0.IN3
+In[1] => Decoder0.IN2
+In[2] => Decoder0.IN1
+In[3] => Decoder0.IN0
+Out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TimeKeeper|Display_Seven:led2
+In[0] => Decoder0.IN3
+In[1] => Decoder0.IN2
+In[2] => Decoder0.IN1
+In[3] => Decoder0.IN0
+Out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TimeKeeper|Display_Seven:led1
+In[0] => Decoder0.IN3
+In[1] => Decoder0.IN2
+In[2] => Decoder0.IN1
+In[3] => Decoder0.IN0
+Out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TimeKeeper|Display_Seven:led0
+In[0] => Decoder0.IN3
+In[1] => Decoder0.IN2
+In[2] => Decoder0.IN1
+In[3] => Decoder0.IN0
+Out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
