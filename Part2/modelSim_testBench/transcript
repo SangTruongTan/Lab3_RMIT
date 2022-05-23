@@ -289,3 +289,38 @@ run
 # ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv(183)
 #    Time: 281200 ps  Iteration: 0  Instance: /TimeKeeper_tb
 # Break in Module TimeKeeper_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv line 183
+# A time value could not be extracted from the current line
+# Compile of Driver.sv was successful.
+# Compile of TimeKeeper_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.TimeKeeper_tb
+# Loading work.Driver
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# [time =0]Intialize the test bench
+# [time =300]Read times and write to the 7 Segment led
+# [time =21200]Simualate the seconds from DS1302
+# [time =37200]Simualate the senconds complete
+# [time =38700]The seconds is 37s
+# [time =41200]Simualate the minutes from DS1302
+# [time =75200]The minutes is 38m
+# [time =78200]Write process
+# [time =193200]Write process successfully
+# [time =194200]Read times and write to the 7 Segment led in second time
+# [time =215200]Simualate the seconds from DS1302
+# [time =231200]Simualate the senconds complete
+# [time =232700]The seconds is 13s, minutes still 38
+# [time =235200]Simualate the minutes from DS1302
+# [time =269200]The minutes is 45m
+# [time =279200]Reset
+# [time =280200]Reset successfully
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv(183)
+#    Time: 281200 ps  Iteration: 0  Instance: /TimeKeeper_tb
+# Break in Module TimeKeeper_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper_tb.sv line 183
+# End time: 23:33:22 on May 23,2022, Elapsed time: 3:58:07
+# Errors: 0, Warnings: 1
+# Closing project C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part2/modelSim_testBench/TimeKeeper.mpf

@@ -28,7 +28,7 @@ initial begin
     #10
     In = 4'd8;
     #10
-    In = 4'd8;
+    In = 4'd9;
     #10
     In = 4'ha;
     #10

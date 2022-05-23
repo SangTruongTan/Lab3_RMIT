@@ -89,7 +89,7 @@ always @ (posedge clk_1) begin
     EHEX4_Decimal, EHEX3_Decimal, EHEX2_Decimal, EHEX1_Decimal, EHEX0_Decimal}
     = testVector[i];
     if(testVector[i] == 35'd0) begin
-        $display("Stop!!!\r\nTotal Time=%0t", $time);
+        $display("Stop!!! Total Time=%0t", $time);
         #100
         $stop;
     end
@@ -129,7 +129,7 @@ localparam LED0 = 7'b000_0001,
            LED6 = 7'b010_0000,
            LED7 = 7'b000_1111,
            LED8 = 7'b000_0000,
-           LED9 = 7'b000_1000;
+           LED9 = 7'b000_0100;
 
 always @(In) begin
     case (In)

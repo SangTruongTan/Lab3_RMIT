@@ -75,6 +75,7 @@ always @(posedge read_process or
     end else begin
             case (process_cnt)
                 8'd0: begin
+                    //Select read or write
                     finish_process = 1'd0;
                     if(read_process == 1'b1)
                         process_cnt = 8'd1;
@@ -82,6 +83,7 @@ always @(posedge read_process or
                         process_cnt = 8'd9;
                 end
                 8'd1: begin
+                    //Read seconds
                     wr_addr = 8'h81;
                     dir = 2'b01;
                     start = 1'b0;
@@ -100,8 +102,10 @@ always @(posedge read_process or
                     dir = 2'b01;
                     wr_addr = 8'h81;
                     if(finish == 1'b1) begin
+                        //Assign Seconds
                         Seconds = rd_1;
                         start = 1'b0;
+                        //Read minutes
                         wr_addr = 8'h83;
                         process_cnt = 8'd5;
                     end
@@ -119,6 +123,7 @@ always @(posedge read_process or
                     start = 1'b1;
                     dir = 2'b01;
                     if(finish == 1'b1) begin
+                        //Assign minutes
                         Minutes = rd_2;
                         //Reset Spi module
                         dir = 2'b00;
@@ -127,6 +132,7 @@ always @(posedge read_process or
                     end
                 end
                 8'd8: begin
+                    //Jump to 20 (end)
                     process_cnt = 8'd20;
                     start = 1'b1;
                     finish_process = 1'b1;
@@ -220,8 +226,6 @@ always @(posedge finish_process or posedge clk2 or negedge rstn) begin
             end
         end
     end
-
-
 end
 
 endmodule

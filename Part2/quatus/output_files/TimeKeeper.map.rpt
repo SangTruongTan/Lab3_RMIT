@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TimeKeeper
-Sun May 22 16:26:49 2022
+Mon May 23 22:04:10 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -50,7 +50,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun May 22 16:26:49 2022       ;
+; Analysis & Synthesis Status     ; Successful - Mon May 23 22:04:10 2022       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; TimeKeeper                                  ;
 ; Top-level Entity Name           ; TimeKeeper                                  ;
@@ -170,8 +170,7 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processors 3-4         ;   0.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -426,7 +425,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sun May 22 16:26:40 2022
+    Info: Processing started: Mon May 23 22:04:00 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TimeKeeper -c TimeKeeper
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -583,10 +582,10 @@ Info (21057): Implemented 255 device resources after synthesis - the final resou
     Info (21060): Implemented 1 bidirectional pins
     Info (21061): Implemented 220 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 38 warnings
-    Info: Peak virtual memory: 4847 megabytes
-    Info: Processing ended: Sun May 22 16:26:49 2022
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:22
+    Info: Peak virtual memory: 4822 megabytes
+    Info: Processing ended: Mon May 23 22:04:10 2022
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:23
 
 
 +------------------------------------------+

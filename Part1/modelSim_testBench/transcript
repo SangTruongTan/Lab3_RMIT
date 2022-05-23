@@ -3,39 +3,11 @@
 # Compile of StopWatch.sv was successful.
 # Compile of Display_Seven_tb.sv was successful.
 # Compile of StopWatch_tb.sv was successful.
-# 5 compiles, 1 failed with no errors.
-vsim work.FSM_tb
-# vsim work.FSM_tb 
-# Start time: 22:52:29 on May 19,2022
-# Loading sv_std.std
-# Loading work.FSM_tb
-# Loading work.FSM
-add wave -position insertpoint sim:/FSM_tb/*
-run
-# [time =0]Start TB
-# [time =40]Start/Stop = 0 => Start State
-# [time =120]Lap/Reset = 0 => Lap Records state
-# [time =160]Updated Lap = 1 => Start State
-# [time =200]Start/Stop = 0 => Start state
-# [time =280]Lap/Reset = 0 => Reset state
-vsim work.Display_Seven_tb
-# End time: 22:52:55 on May 19,2022, Elapsed time: 0:00:26
-# Errors: 0, Warnings: 2
-# vsim work.Display_Seven_tb 
-# Start time: 22:52:55 on May 19,2022
-# Loading sv_std.std
-# Loading work.Display_Seven_tb
-# Loading work.Display_Seven
-add wave -position insertpoint  \
-sim:/Display_Seven_tb/In
-add wave -position insertpoint  \
-sim:/Display_Seven_tb/Out
-run
+# Compile of Display_Seven.sv was successful.
+# 6 compiles, 0 failed with no errors.
 vsim work.StopWatch_tb
-# End time: 22:53:36 on May 19,2022, Elapsed time: 0:00:41
-# Errors: 0, Warnings: 1
 # vsim work.StopWatch_tb 
-# Start time: 22:53:36 on May 19,2022
+# Start time: 23:36:01 on May 23,2022
 # Loading sv_std.std
 # Loading work.StopWatch_tb
 # Loading work.Clock_divider1
@@ -46,14 +18,6 @@ vsim work.StopWatch_tb
 # Loading work.Display_Two
 # Loading work.Display_Seven
 # Loading work.Convert
-run
-# Stop!!!r
-# Total Time=7210
-# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv(94)
-#    Time: 7310 ps  Iteration: 0  Instance: /StopWatch_tb
-# Break in Module StopWatch_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv line 94
-add wave -position insertpoint  \
-sim:/StopWatch_tb/EHEX0
 add wave -position insertpoint  \
 sim:/StopWatch_tb/clk \
 sim:/StopWatch_tb/clk_1 \
@@ -86,12 +50,32 @@ sim:/StopWatch_tb/lap_reset \
 sim:/StopWatch_tb/rstn \
 sim:/StopWatch_tb/start_stop \
 sim:/StopWatch_tb/testVector
-restart
 run
 # Stop!!!r
 # Total Time=7210
 # ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv(94)
 #    Time: 7310 ps  Iteration: 0  Instance: /StopWatch_tb
 # Break in Module StopWatch_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv line 94
-# End time: 22:54:11 on May 19,2022, Elapsed time: 0:00:35
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# Stop!!!r
+# Total Time=7210
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv(94)
+#    Time: 7310 ps  Iteration: 0  Instance: /StopWatch_tb
+# Break in Module StopWatch_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv line 94
+# Compile of StopWatch_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.StopWatch_tb
+# Loading work.Clock_divider1
+# Loading work.Convert
+run
+# Stop!!! Total Time=7210
+# ** Note: $stop    : C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv(94)
+#    Time: 7310 ps  Iteration: 0  Instance: /StopWatch_tb
+# Break in Module StopWatch_tb at C:/Users/sangt/OneDrive/Project/Job/RMIT/Lab3/Part1/modelSim_testBench/StopWatch_tb.sv line 94
+add wave -position insertpoint  \
+sim:/StopWatch_tb/clk
+# End time: 00:15:46 on May 24,2022, Elapsed time: 0:39:45
 # Errors: 0, Warnings: 1
