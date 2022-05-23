@@ -106,7 +106,7 @@ initial begin
     dir_io = 1'b0;
     #500
     if(LED0 == LED_7 && LED1 == LED_3 && LED2 == LED_8 && LED3 == LED_3) begin
-        $display("[time =%0t]The minutes is 38s", $time);
+        $display("[time =%0t]The minutes is 38m", $time);
     end else begin
         $display("[time =%0t]Wrong value", $time);
         #1000
@@ -119,6 +119,67 @@ initial begin
     write = 1'b1;
     #110000
     $display("[time =%0t]Write process successfully", $time);
+    #1000
+    $display("[time =%0t]Read times and write to the 7 Segment led in second time", $time);
+    read = 1'b0;
+    #5000
+    read = 1'b1;
+    #16000
+    $display("[time =%0t]Simualate the seconds from DS1302", $time);
+    dir_io = 1'b1;
+    gen_io = 1'b1;
+    #4000
+    gen_io = 1'b0;
+    #4000
+    gen_io = 1'b1;
+    #2000
+    gen_io = 1'b0;
+    #6000
+    dir_io = 1'b0;
+    $display("[time =%0t]Simualate the senconds complete", $time);
+    #1500
+    if(LED0 == LED_3 && LED1 == LED_1 && LED2 == LED_8 && LED3 == LED_3) begin
+        $display("[time =%0t]The seconds is 13s, minutes still 38", $time);
+    end else begin
+        $display("[time =%0t]Wrong value", $time);
+        #1000
+        $stop;
+    end
+    #2500
+    $display("[time =%0t]Simualate the minutes from DS1302", $time);
+    #17500
+    dir_io = 1'b1;
+    gen_io = 1'b1;
+    #2000
+    gen_io = 1'b0;
+    #2000
+    gen_io = 1'b1;
+    #2000
+    gen_io = 1'b0;
+    #4000
+    gen_io = 1'b1;
+    #2000
+    gen_io = 1'b0;
+    #4000
+    #500
+    if(LED0 == LED_3 && LED1 == LED_1 && LED2 == LED_5 && LED3 == LED_2) begin
+        $display("[time =%0t]The minutes is 45m", $time);
+    end else begin
+        $display("[time =%0t]Wrong value", $time);
+        #1000
+        $stop;
+    end
+    #10000
+    $display("[time =%0t]Reset", $time);
+    rstn = 1'b0;
+    #1000
+    rstn = 1'b1;
+    if(LED0 == LED_0 && LED1 == LED_0 && LED2 == LED_0 && LED3 == LED_0) begin
+        $display("[time =%0t]Reset successfully", $time);
+    end else begin
+        $display("[time =%0t]Can not reset", $time);
+    end
+    #1000
     $stop;
 
 end
